@@ -1,0 +1,17 @@
+{
+  "name": "mean",
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-cookies": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest",
+    "bootstrap": "latest",
+    "angular-bootstrap": "latest",
+    "angular-ui-router": "#master",
+    "web-bootstrap": "./node_modules/meanio/resources/web-bootstrap.js",
+    "angular-ui-select": "latest",
+    "angular-sanitize": "latest"
+  }
+}
