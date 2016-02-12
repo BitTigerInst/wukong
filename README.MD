@@ -54,9 +54,15 @@ MEAN is an acronym for *Mongo*, *Express.js* , *Angular.js* and *Node.js*
 
 Heroku is a fully managed container-based cloud platform, with integrated data services and a powerful ecosystem, for deploying and running modern apps. The Heroku developer experience is based on an app-centric approach to software delivery, and integrates with today’s most popular developer tools and workflows.
 
-#### Hosting MEAN on [Docker](https://www.docker.com/what-docker)
+## Documentation
 
-Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, system libraries – anything you can install on a server. This guarantees that it will always run the same, regardless of the environment it is running in.
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
 
 ## Credits
   * To our awesome <a href="https://github.com/orgs/linnovate/teams/mean">core team</a> with help of our <a href="https://github.com/linnovate/mean/graphs/contributors">contributors</a> which have made this project a success.
