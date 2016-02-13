@@ -19,6 +19,7 @@ If purchase success, this app will be added into user profile. The core feature 
 
 ### <img src="packages/assets/img/logo.png" width="124px" height="124px" /> 白驹过隙
 **More to be add here**
+**More to be add here**
 
 ### <img src="packages/assets/img/bittigerlogo.png" width="124px" height="124px" /> BitTiger
 **More to be add here**
