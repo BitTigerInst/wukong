@@ -1,14 +1,15 @@
-# **wukong** *https://wukong-bittiger.herokuapp.com*
+# **Wukong** *https://wukong-bittiger.herokuapp.com*
 
 ## Description
 
-Inspired by DMK-邹蓉, wukong是白驹过隙小组为Bittiger三人学习小组设计的成员分组平台
+Inspired by DMK - Rong Zou, Wukong (*https://wukong-bittiger.herokuapp.com*) is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
+
 **How does it work?**
 
-1. 把大家的信息都导入到membership数据库中, 成员有三种状态: active, 待分组, inactive.
-2. 每当新成员填表后, 会进入待分组状态, 系统将根据他的preference推荐仍有open的小组, 或者将多位新人按照地区兴趣分组.
-3. 每位小组长可以在自己小组贴上open职位及技能点需求, 想跳组的老成员or新成员可以直接联系组长.
-4. 组长可以将inactive持续一周的组员放入inactive pool, 备注会有team history, 等他回到想做project的状态时再去激活状态, 重新入组.
+1. Members' information is stored in database and each member has one of the following three statuses: active, to be grouped or inactive.
+2. Once new members fill information form, the default status will be "to be grouped". Our system will recommend joining certain opening groups based on their preferences and skills. Or several new members will become a new team based on their regions and interests.
+3. Group leader can post wanting positions and skills. All the members who want to join a target group can contact their leader.
+4. People being inactive for one week will be put into "inactive pool" by group leader. The status will be changed to active after they want to do projects. The system will do the recommendation based on their team history. 
 
 **How we build it?**
 
