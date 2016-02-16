@@ -1,19 +1,18 @@
-# AppStore WebApp
+# **wukong** *https://wukong-bittiger.herokuapp.com*
 
 ## Description
 
-Inspired by [Tiger AppStore WebApp](https://bittigerfamily.slack.com/files/qinyuan/F0J4G9QTT/BitTiger_Project_List), AppStore WebApp aims to develop a web application by using MEAN Stack. After user navigate to our website, the home page will show all apps. User can filter by different property(i.e. price, category, popularity). By click any app, user will come to detail page of this app where not only the detail information will be displayed but also user can purchase this app provided user already login.
+Inspired by DMK-邹蓉, wukong是白驹过隙小组为Bittiger三人学习小组设计的成员分组平台
+**How does it work?**
 
-If purchase success, this app will be added into user profile. The core feature includes:
+1. 把大家的信息都导入到membership数据库中, 成员有三种状态: active, 待分组, inactive.
+2. 每当新成员填表后, 会进入待分组状态, 系统将根据他的preference推荐仍有open的小组, 或者将多位新人按照地区兴趣分组.
+3. 每位小组长可以在自己小组贴上open职位及技能点需求, 想跳组的老成员or新成员可以直接联系组长.
+4. 组长可以将inactive持续一周的组员放入inactive pool, 备注会有team history, 等他回到想做project的状态时再去激活状态, 重新入组.
 
-1. User management.
-  * Register / update / remove account
-  * Login / Logout
-  * Balance / Membership
-2. App display
-  * Home page has filter and search box to help user find apps easier
-  * Responsive design
-3. MEAM Stak + Hosting by Heroku / Docker
+**How we build it?**
+
+Built by using MEAN stack, and deployed on Heroku.
 
 ## Who we are:
 
