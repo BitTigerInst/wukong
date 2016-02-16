@@ -18,8 +18,10 @@ Built by using MEAN stack, and deployed on Heroku.
 ## Who we are:
 
 ### <img src="packages/assets/img/logo.png" width="124px" height="124px" /> 白驹过隙
+**More to be add here**
 
 ### <img src="packages/assets/img/bittigerlogo.png" width="124px" height="124px" /> BitTiger
+**More to be add here**
 
 ### [![MEAN Logo](http://mean.io/system/assets/img/logos/meanlogo.png)](http://mean.io/) MEAN Stack
 
