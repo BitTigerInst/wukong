@@ -6,10 +6,18 @@ MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
   console.log('Connected correctly to server.');
 
-  db.collection('tao').insert({
-    name: 'tao',
-    age: 19
-  }, function(error, docs) {
+  var student = {
+    name:'xiao pang',
+    age: '28',
+    sex: 'male',
+    major:['OS', 'Algorithm', 'DB'],
+    address: {
+      street: 'easten ave',
+      zip: '08873'
+    }
+  };
+
+  db.collection('tao').insert(student, function(error, docs) {
     if (error) {
       console.log(error);
       process.exit(1);
@@ -17,7 +25,7 @@ MongoClient.connect(url, function(err, db) {
 
     console.log('Insert successful.');
 
-    db.collection('tao').find().toArray(function(error, docs) {
+    db.collection('tao').find({'address.street':'easten ave'}).toArray(function(error, docs) {
       if (error) {
         console.log(error);
         process.exit(1);
