@@ -7,7 +7,7 @@ MongoClient.connect(url, function(err, db) {
   console.log('Connected correctly to server.');
 
   var student = {
-    name:'xiao pang',
+    name:'xiao pangxxx',
     age: '28',
     sex: 'male',
     major:['OS', 'Algorithm', 'DB'],
