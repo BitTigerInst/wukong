@@ -1,8 +1,9 @@
-# **Wukong** *https://wukong-bittiger.herokuapp.com*
+# wukong!
+> https://wukong-bittiger.herokuapp.com
 
 ## Description
 
-Inspired by DMK - Rong Zou, Wukong (*https://wukong-bittiger.herokuapp.com*) is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
+Inspired by DMK - Rong Zou, wukong! is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
 
 **How does it work?**
 
@@ -17,13 +18,13 @@ Built by using MEAN stack, and deployed on Heroku.
 
 ## Who we are:
 
-### <img src="packages/assets/img/logo.png" width="124px" height="124px" /> 白驹过隙
+### <img src="public/images/logo.png" width="124px" height="124px" /> 白驹过隙
 **More to be add here**
 
-### <img src="packages/assets/img/bittigerlogo.png" width="124px" height="124px" /> BitTiger
+### <img src="public/images/bittigerlogo.png" width="124px" height="124px" /> BitTiger
 **More to be add here**
 
-### [![MEAN Logo](http://mean.io/system/assets/img/logos/meanlogo.png)](http://mean.io/) MEAN Stack
+### [![MEAN Logo](public/images/meanlogo.png)](http://mean.io/) MEAN Stack
 
 MEAN is a framework for an easy starting point with [MongoDB](https://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](https://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 
@@ -54,9 +55,15 @@ MEAN is an acronym for *Mongo*, *Express.js* , *Angular.js* and *Node.js*
 
 Heroku is a fully managed container-based cloud platform, with integrated data services and a powerful ecosystem, for deploying and running modern apps. The Heroku developer experience is based on an app-centric approach to software delivery, and integrates with today’s most popular developer tools and workflows.
 
-#### Hosting MEAN on [Docker](https://www.docker.com/what-docker)
+## Documentation
 
-Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, system libraries – anything you can install on a server. This guarantees that it will always run the same, regardless of the environment it is running in.
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
 
 ## Credits
   * To our awesome <a href="https://github.com/orgs/linnovate/teams/mean">core team</a> with help of our <a href="https://github.com/linnovate/mean/graphs/contributors">contributors</a> which have made this project a success.
