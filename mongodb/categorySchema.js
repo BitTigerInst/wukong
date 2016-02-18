@@ -1,4 +1,4 @@
-var mongoose = require('mongoos');
+var mongoose = require('mongoose');
 
 var categorySchema = {
   _id: {

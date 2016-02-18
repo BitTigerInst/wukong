@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var Category = require('./category');
+var Category = require('./categorySchema');
 
 var productSchema = {
   name: {
@@ -24,5 +24,20 @@ var productSchema = {
   category: Category.categorySchema
 };
 
-module.exports = new mongoose.Schema(productSchema);
+var currencySymbols = {
+  'USD': '$',
+  'EUR': '€',
+  'GBP': '£'
+};
+
+var schema = new mongoose.Schema(productSchema);
+schema.virtual('displayPrice').get(function() {
+  return currencySymbols[this.price.currency] +
+    '' + this.price.amount;
+});
+
+schema.set('toObject', { virtuals: true });
+schema.set('toJSON', { virtuals: true });
+
+module.exports = schema;
 module.exports.productSchema = productSchema;
