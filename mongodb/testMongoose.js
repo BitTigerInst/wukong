@@ -15,8 +15,15 @@ user.save(function(error) {
     console.log('error occur');
     console.log(error);
     process.exit(1);
-  } else {
-    console.log('success');
-    process.exit(0);
   }
+
+  User.find({ _id: '56c508a9b8cb7281ce1413d4'}, function(error, docs) {
+    if (error) {
+      console.log('error occur');
+      console.log(error);
+      process.exit(1);
+    }
+    console.log(require('util').inspect(docs));
+    process.exit(0);
+  })
 })
