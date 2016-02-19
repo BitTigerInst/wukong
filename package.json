@@ -4,14 +4,16 @@
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha ./test/testindex"
   },
   "dependencies": {
     "cool-ascii-faces": "1.3.3",
     "ejs": "2.3.3",
     "express": "4.13.3",
     "mongodb": "^2.1.7",
-    "mongoose": "^4.4.4"
+    "mongoose": "^4.4.4",
+    "superagent": "^1.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",
