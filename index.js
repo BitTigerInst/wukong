@@ -1,4 +1,5 @@
 var express = require('express');
+var favicon = require('serve-favicon');
 var wagner = require('wagner-core');
 
 require('./mongodb/models')(wagner);
@@ -7,6 +8,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
+app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public'));
 
 app.use('/api/v1', require('./api')(wagner));

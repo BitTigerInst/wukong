@@ -12,6 +12,7 @@
     "http-status": "^0.2.0",
     "mongodb": "^2.1.7",
     "mongoose": "^4.4.4",
+    "serve-favicon": "^2.3.0",
     "superagent": "^1.7.2",
     "wagner-core": "^0.2.0"
   },
