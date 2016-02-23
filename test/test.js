@@ -13,7 +13,7 @@ describe('Category API', function() {
     var app = express();
 
     // Bootstrap server
-    models = require('../models')(wagner);
+    models = require('../mongodb/models')(wagner);
     app.use(require('../api')(wagner));
 
     server = app.listen(3000);
