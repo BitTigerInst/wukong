@@ -967,7 +967,7 @@ body.stretched #header.full-header .container {
 	font-family: 'Raleway', sans-serif;
 	font-size: 36px;
 	line-height: 100%;
-	margin-right: 40px;
+	margin-right: 20px;
 }
 
 #header.full-header #logo {
@@ -11632,7 +11632,7 @@ button.toast-close-button {
 
 #footer {
 	position: relative;
-	background-color: #ffffff;
+	background-color: #DDD;
 	border-top: 5px solid rgba(0,0,0,0.2);
 }
 
@@ -11693,7 +11693,7 @@ button.toast-close-button {
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #ffffff;
+	background-color: #DDD;
 	font-size: 14px;
 	line-height: 1.8;
 }
