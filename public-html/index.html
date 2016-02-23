@@ -419,8 +419,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo-resto.png" alt="Canvas Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/wukong.png" alt="Canvas Logo"></a>
+						<a onclick = 'scrollWin()' href = "javascript:void(0)" class="standard-logo" data-dark-logo="images/monkey_s.jpg"><img src="images/monkey_s.jpg" alt="Canvas Logo"></a>
+						<a onclick = 'scrollWin()' href = "javascript:void(0)" class="retina-logo" data-dark-logo="images/monkey.jpg"><img src="images/monkey.jpg" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -446,16 +446,13 @@
 						</ul>
 
 						
-						<!-- Top Sign Up and Login
-						============================================= -->
-						<div id="top-search">
-							<a href="#">Sign&nbsp;Up</a></li>
-						</div>
-						
-						<div id="top-search">
-							<a href="#">Log&nbsp;In</a></li>
-						</div>
-						<!-- #top-sign up and login end -->
+      
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#"><i class="icon-login"></i>Login</a></li>
+				        <li>
+				          <a href="#"><i class="icon-chevron-sign-up"></i>SignUp</a></li>
+				        </li>
+				      </ul>
 
 
 
@@ -473,6 +470,13 @@
 				</div>
 
 			</div>
+
+			<script>
+				function scrollWin() {
+				    $("html, body").animate({ scrollTop: 0 }, 400);
+				    return false;
+				}
+			</script>
 
 		</header><!-- #header end -->
 
