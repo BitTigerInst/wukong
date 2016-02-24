@@ -1,8 +1,8 @@
 var express = require('express');
 var favicon = require('serve-favicon');
 var wagner = require('wagner-core');
-
-require('./mongodb/models')(wagner);
+var models = require('./mongodb/models')(wagner);
+require('./mongodb/loadData')(models);
 
 var app = express();
 

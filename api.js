@@ -4,6 +4,7 @@ var status = require('http-status');
 module.exports = function(wagner) {
   var api = express.Router();
 
+  // http://localhost:5000/api/v1/category/id/Electronics
   api.get('/category/id/:id', wagner.invoke(function(Category) {
     return function(req, res) {
       Category.findOne({
@@ -30,6 +31,7 @@ module.exports = function(wagner) {
     };
   }));
 
+  // http://localhost:5000/api/v1/category/parent/Electronics
   api.get('/category/parent/:id', wagner.invoke(function(Category) {
     return function(req, res) {
       Category.
@@ -54,15 +56,18 @@ module.exports = function(wagner) {
     };
   }));
 
-  api.get('/product/id/:id', wagner.invoke(function(Product) {
+  // http://localhost:5000/api/v1/product/name/Asus%20Zenbook%20Prime
+  api.get('/product/name/:name', wagner.invoke(function(Product) {
     return function(req, res) {
+      console.log(req.params.name);
       Product.findOne({
-          _id: req.params.id
+          name: req.params.name
         },
         handleOne.bind(null, 'product', res));
     };
   }));
 
+  // http://localhost:5000/api/v1/product/category/Electronics
   api.get('/product/category/:id', wagner.invoke(function(Product) {
     return function(req, res) {
       var sort = {
