@@ -2338,8 +2338,8 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 -----------------------------------------------------------------*/
 
 #top-right,
-#top-right ul { 
-	margin: 0; 
+#top-right ul {
+	margin: 0;
 }
 
 #top-right li,
@@ -13329,4 +13329,3 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-
