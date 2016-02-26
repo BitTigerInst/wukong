@@ -163,17 +163,17 @@
 
 		</header><!-- #header end -->
 
-		<!-- Page Title
+<!-- Page Title
 		============================================= -->
 		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>Project Display</h1>
-				<span>Showcase of Our Awesome Works</span>
-				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li class="active">Project Display</li>
-				</ol>
+				<h1>Project Demo</h1>
+				<div id="portfolio-navigation">
+					<a href="#"><i class="icon-angle-left"></i></a>
+					<a href="#"><i class="icon-line-grid"></i></a>
+					<a href="#"><i class="icon-angle-right"></i></a>
+				</div>
 			</div>
 
 		</section><!-- #page-title end -->
@@ -186,90 +186,142 @@
 
 				<div class="container clearfix">
 
-					<!-- Portfolio Filter
+					<!-- Portfolio Single Video
 					============================================= -->
-					<ul id="portfolio-filter" class="clearfix">
+					<div class="col_two_third portfolio-single-image nobottommargin">
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/6pxRHBw-k8M" frameborder="0" allowfullscreen></iframe>
+					</div><!-- .portfolio-single-image end -->
 
-						<li class="activeFilter"><a href="#" data-filter="*">Show All</a></li>
-						<li><a href="#" data-filter=".pf-frontend">Front-end</a></li>
-						<li><a href="#" data-filter=".pf-backend">Back-end</a></li>
-						<li><a href="#" data-filter=".pf-nodejs">Node.js</a></li>
-						<li><a href="#" data-filter=".pf-mobile">Mobile Development</a></li>
-						<li><a href="#" data-filter=".pf-network">Network</a></li>
-						<li><a href="#" data-filter=".pf-java">Java</a></li>
-						<li><a href="#" data-filter=".pf-python">Python</a></li>
-						<li><a href="#" data-filter=".pf-mongodb">MongoDB</a></li>
-						<li><a href="#" data-filter=".pf-r">R</a></li>
-						<li><a href="#" data-filter=".pf-machinelearning">Machine Learning</a></li>
-						<li><a href="#" data-filter=".pf-rest">Rest</a></li>
+					<!-- Portfolio Single Content
+					============================================= -->
+					<div class="col_one_third portfolio-single-content col_last nobottommargin">
 
+						<!-- Portfolio Single - Description
+						============================================= -->
+						<div class="fancy-title title-bottom-border">
+							<h2>Project Info:</h2>
+						</div>
+						<p>Wukong! is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.</p>
+						<p>How does it work?</p>
+						<p>1. Members' information is stored in database and each member has one of the following three statuses: active, to be grouped or inactive.
+</p>
+						<p>2. Once new members fill information form, the default status will be "to be grouped". Our system will recommend joining certain opening groups based on their preferences and skills. Or several new members will become a new team based on their regions and interests.</p>
+						<p>3. Group leader can post wanting positions and skills. All the members who want to join a target group can contact their leader.</p>
+						<p>4. People being inactive for one week will be put into "inactive pool" by group leader. Their team history will be saved. After they want to do projects the status can be changed to active and they can enter the group again.</p>
 
+						<!-- Portfolio Single - Description End -->
 
-					</ul><!-- #portfolio-filter end -->
+						<div class="line"></div>
 
-					<div id="portfolio-shuffle">
-						<i class="icon-random"></i>
-					</div>
+						<!-- Portfolio Single - Meta
+						============================================= -->
+						<ul class="portfolio-meta bottommargin">
+							<li><span><i class="icon-user"></i>Created by:</span> BJGX (白驹过隙)</li>
+							<li><span><i class="icon-calendar3"></i>Completed on:</span> 17th March 2016</li>
+							<li><span><i class="icon-link"></i>Github:</span> <a href="https://github.com/BitTigerInst/wukong.git">Wukong</a></li>
+						</ul>
+						<!-- Portfolio Single - Meta End -->
+
+						<!-- Portfolio Single - Share
+						============================================= -->
+						<div class="si-share clearfix">
+							<span>Share:</span>
+							<div>
+								<a href="#" class="social-icon si-borderless si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+								<a href="#" class="social-icon si-borderless si-twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+								<a href="#" class="social-icon si-borderless si-pinterest">
+									<i class="icon-pinterest"></i>
+									<i class="icon-pinterest"></i>
+								</a>
+								<a href="#" class="social-icon si-borderless si-gplus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+								<a href="#" class="social-icon si-borderless si-rss">
+									<i class="icon-rss"></i>
+									<i class="icon-rss"></i>
+								</a>
+								<a href="#" class="social-icon si-borderless si-email3">
+									<i class="icon-email3"></i>
+									<i class="icon-email3"></i>
+								</a>
+							</div>
+						</div>
+						<!-- Portfolio Single - Share End -->
+
+					</div><!-- .portfolio-single-content end -->
 
 					<div class="clear"></div>
 
-					<!-- Portfolio Items
+					<div class="divider divider-center"><i class="icon-circle"></i></div>
+
+					<!-- Related Portfolio Items
 					============================================= -->
-					<div id="portfolio" class="clearfix">
+					<h4>Related Projects:</h4>
+
+					<div id="related-portfolio" class="owl-carousel portfolio-carousel">
 					<!-- Item 1
 					============================================= -->
-						<article class="portfolio-item pf-python pf-backend pf-mongodb">
-							<div class="portfolio-image">
-								<a href="detail.html">
-									<img src="images/cover/1.jpg" alt="Open Imagination">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="detail.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+						<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
+									<a href="detail.html">
+										<img src="images/cover/1.jpg" alt="Open Imagination">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="images/list/full/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+										<a href="detail.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="detail.html">AppStore Crawler</a></h3>
+									<span><a href="#">Python</a>, <a href="#">Back-end</a>, <a href="#">MongoDB</a></span><br>
 								</div>
 							</div>
-							<div class="portfolio-desc">
-								<h3><a href="detail.html">AppStore Crawler</a></h3>
-								<span><a href="#">Python</a>, <a href="#">Back-end</a>, <a href="#">MongoDB</a></span><br>
-							</div>
-						</article>
+						</div>
 					<!-- Item 2
 					============================================= -->
-						<article class="portfolio-item pf-r pf-machinelearning">
-							<div class="portfolio-image">
-								<a href="detail.html">
-									<img src="images/cover/2.jpg" alt="Locked Steel Gate">
-								</a>
+						<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
+									<a href="detail.html">
+										<img src="images/cover/2.jpg" alt="Locked Steel Gate">
+									</a>
 								<div class="portfolio-overlay">
 									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
 									<a href="detail.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
-							</div>
-							<div class="portfolio-desc">
-								<h3><a href="detail.html">Airbnb</a></h3>
-								<span><a href="#">R</a>, <a href="#">Machine Learning</a></span><br>
-							</div>
-						</article>
-					<!-- Item 3
-					============================================= -->
-						<article class="portfolio-item pf-python pf-backend pf-mongodb pf-machinelearning">
-							<div class="portfolio-image">
-								<a href="#">
-									<img src="images/cover/3.jpg" alt="Mac Sunglasses">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
-							<div class="portfolio-desc">
-								<h3><a href="portfolio-single-video.html">AppStore Recommender</a></h3>
-								<span><a href="#">Python</a>, <a href="#">Back-end</a>, <a href="#">MongoDB</a>, <a href="#">Machine Learning</a></span>
+						</div>
+					<!-- Item 3
+					============================================= -->		<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
+									<a href="#">
+										<img src="images/cover/3.jpg" alt="Mac Sunglasses">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+										<a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="portfolio-single-video.html">AppStore Recommender</a></h3>
+									<span><a href="#">Python</a>, <a href="#">Back-end</a>, <a href="#">MongoDB</a>, <a href="#">Machine Learning</a></span>
+								</div>
 							</div>
-						</article>
+						</div>
 					<!-- Item 4
-					============================================= -->
-						<article class="portfolio-item pf-java pf-nodejs pf-frontend">
+					============================================= -->	
+					<div class="oc-item">
+							<div class="iportfolio">
 							<div class="portfolio-image">
 								<div class="fslider" data-arrows="false" data-speed="400" data-pause="4000">
 									<div class="flexslider">
@@ -288,68 +340,74 @@
 								<h3><a href="portfolio-single-gallery.html">Appstore Webapp</a></h3>
 								<span><a href="#"><a href="#">Java</a>, <a href="#">Node.js</a>, <a href="#">Front-end</a></span><br>
 							</div>
-						</article>
+							</div>
+						</div>
 					<!-- Item 5
-					============================================= -->
-						<article class="portfolio-item pf-backend pf-python pf-network">
-							<div class="portfolio-image">
-								<a href="detail.html">
-									<img src="images/cover/5.jpg" alt="Console Activity">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="detail.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc">
-								<h3><a href="detail.html">Load Balancer</a></h3>
-								<span><a href="#">Python</a>, <a href="#">Back-end</a>, <a href="#">Network</a></span>
-							</div>
-						</article>
-					<!-- Item 6
-					============================================= -->
-						<article class="portfolio-item pf-mobile pf-backend">
-							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6.jpg" alt="Shake It"></a></div>
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6-2.jpg" alt="Shake It"></a></div>
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6-3.jpg" alt="Shake It"></a></div>
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6-4.jpg" alt="Shake It"></a></div>
-										</div>
+					============================================= -->	
+					<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
+									<a href="detail.html">
+										<img src="images/cover/5.jpg" alt="Console Activity">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+										<a href="detail.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 									</div>
 								</div>
-								<div class="portfolio-overlay" data-lightbox="gallery">
-									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="portfolio-single-gallery.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								<div class="portfolio-desc">
+									<h3><a href="detail.html">Load Balancer</a></h3>
+									<span><a href="#">Python</a>, <a href="#">Back-end</a>, <a href="#">Network</a></span>
 								</div>
 							</div>
-							<div class="portfolio-desc">
-								<h3><a href="portfolio-single-gallery.html">Android Mini-Flickr</a></h3>
-								<span><a href="#">Mobile Development</a>, <a href="#">Back-end</a></span>
+						</div>
+					<!-- Item 6
+					============================================= -->	
+					<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
+									<div class="fslider" data-arrows="false">
+										<div class="flexslider">
+											<div class="slider-wrap">
+												<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6.jpg" alt="Shake It"></a></div>
+												<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6-2.jpg" alt="Shake It"></a></div>
+												<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6-3.jpg" alt="Shake It"></a></div>
+												<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/6-4.jpg" alt="Shake It"></a></div>
+											</div>
+										</div>
+									</div>
+									<div class="portfolio-overlay" data-lightbox="gallery">
+										<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+										<a href="portfolio-single-gallery.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="portfolio-single-gallery.html">Android Mini-Flickr</a></h3>
+									<span><a href="#">Mobile Development</a>, <a href="#">Back-end</a></span>
+								</div>
 							</div>
-						</article>
+						</div>
 					<!-- Item 7
-					============================================= -->
-						<article class="portfolio-item pf-mobile">
-							<div class="portfolio-image">
-								<a href="portfolio-single-video.html">
-									<img src="images/cover/7.jpg" alt="Backpack Contents">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="http://www.youtube.com/watch?v=kuceVNBTJio" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+					============================================= -->	
+					<div class="oc-item">
+								<div class="portfolio-image">
+									<a href="portfolio-single-video.html">
+										<img src="images/cover/7.jpg" alt="Backpack Contents">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="http://www.youtube.com/watch?v=kuceVNBTJio" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+										<a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+									</div>
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="portfolio-single-video.html">Find my friend</a></h3>
+									<span><a href="#">Mobile Development</a></span>
 								</div>
 							</div>
-							<div class="portfolio-desc">
-								<h3><a href="portfolio-single-video.html">Find my friend</a></h3>
-								<span><a href="#">Mobile Development</a></span>
-							</div>
-						</article>
-					<!-- Item8
-					============================================= -->
-						<article class="portfolio-item pf-front-end">
+					<!-- Item 8
+					============================================= -->	
+					<div class="oc-item">
+							<div class="iportfolio">
 							<div class="portfolio-image">
 								<a href="detail.html">
 									<img src="images/cover/8.jpg" alt="Sunset Bulb Glow">
@@ -363,34 +421,13 @@
 								<h3><a href="detail.html">React</a></h3>
 								<span><a href="#">Front-end</a></span>
 							</div>
-						</article>
+							</div>
+						</div>
 					<!-- Item 9
-					============================================= -->
-						<article class="portfolio-item pf-frontend pf-backend pf-nodejs pf-mongodb pf-icons">
-							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false" data-speed="650" data-pause="3500" data-animation="fade">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/9.jpg" alt="Bridge Side"></a></div>
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/9-2.jpg" alt="Bridge Side"></a></div>
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/9-3.jpg" alt="Bridge Side"></a></div>
-										</div>
-									</div>
-								</div>
-								<div class="portfolio-overlay" data-lightbox="gallery">
-									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="portfolio-single-gallery.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
-							</div>
-							<div class="portfolio-desc">
-								<h3><a href="detail.html">Wukong</a></h3>
-								<span><a href="#">Front-end</a>, <a href="#">Back-end</a>, <a href="#">Node.js</a>, <a href="#">MongoDB</a></span>
-							</div>
-						</article>
-					<!-- Item 10
-					============================================= -->
-						<article class="portfolio-item pf-java">
-							<div class="portfolio-image">
+					============================================= -->	
+					<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
 								<a href="portfolio-single-video.html">
 									<img src="images/cover/10.jpg" alt="Study Table">
 								</a>
@@ -403,86 +440,61 @@
 								<h3><a href="portfolio-single-video.html">Project Java</a></h3>
 								<span><a href="#">Java</a></span>
 							</div>
-						</article>
-					<!-- Item 11
-					============================================= -->
-						<article class="portfolio-item pf-frontend">
-							<div class="portfolio-image">
-								<a href="detail.html">
-									<img src="images/cover/11.jpg" alt="Workspace Stuff">
-								</a>
-								<div class="portfolio-overlay">
-									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="detail.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-								</div>
 							</div>
-							<div class="portfolio-desc">
-								<h3><a href="detail.html">Project Bootstrap</a></h3>
-								<span><a href="#">Front-end</a></span>
-							</div>
-						</article>
-					<!-- Item 12
-					============================================= -->
-						<article class="portfolio-item pf-mobile">
-							<div class="portfolio-image">
-								<div class="fslider" data-arrows="false" data-speed="700" data-pause="7000">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/12.jpg" alt="Fixed Aperture"></a></div>
-											<div class="slide"><a href="portfolio-single-gallery.html"><img src="images/cover/12-2.jpg" alt="Fixed Aperture"></a></div>
-										</div>
+						</div>
+					<!-- Item 10
+					============================================= -->	
+					<div class="oc-item">
+							<div class="iportfolio">
+								<div class="portfolio-image">
+									<a href="detail.html">
+										<img src="images/cover/11.jpg" alt="Workspace Stuff">
+									</a>
+									<div class="portfolio-overlay">
+										<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+										<a href="detail.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 									</div>
 								</div>
-								<div class="portfolio-overlay" data-lightbox="gallery">
-									<a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-									<a href="portfolio-single-gallery.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+								<div class="portfolio-desc">
+									<h3><a href="detail.html">Project Bootstrap</a></h3>
+									<span><a href="#">Front-end</a></span>
 								</div>
 							</div>
-							<div class="portfolio-desc">
-								<h3><a href="portfolio-single-gallery.html">Project IOS</a></h3>
-								<span><a href="#">Mobile Development</a></span>
-							</div>
-						</article>
+						</div>
 
-					</div><!-- #portfolio end -->
+					</div><!-- .portfolio-carousel end -->
 
-					<!-- Portfolio Script
-					============================================= -->
 					<script type="text/javascript">
 
-						jQuery(window).load(function(){
+						jQuery(document).ready(function($) {
 
-							var $container = $('#portfolio');
+							var relatedPortfolio = $("#related-portfolio");
 
-							$container.isotope({ transitionDuration: '0.65s' });
-
-							$('#portfolio-filter a').click(function(){
-								$('#portfolio-filter li').removeClass('activeFilter');
-								$(this).parent('li').addClass('activeFilter');
-								var selector = $(this).attr('data-filter');
-								$container.isotope({ filter: selector });
-								return false;
-							});
-
-							$('#portfolio-shuffle').click(function(){
-								$container.isotope('updateSortData').isotope({
-									sortBy: 'random'
-								});
-							});
-
-							$(window).resize(function() {
-								$container.isotope('layout');
+							relatedPortfolio.owlCarousel({
+								margin: 20,
+								nav: false,
+								dots:true,
+								autoplay: true,
+								autoplayHoverPause: true,
+								responsive:{
+									0:{ items:1 },
+									480:{ items:2 },
+									768:{ items:3 },
+									992: { items:4 }
+								}
 							});
 
 						});
 
-					</script><!-- Portfolio Script End -->
+					</script>
 
 				</div>
 
 			</div>
 
-		</section><!-- #content end -->
+		</section><!-- #content end -->	
+
+		
 
 		<!-- Footer
 		============================================= -->
