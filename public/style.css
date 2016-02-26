@@ -2338,8 +2338,8 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 -----------------------------------------------------------------*/
 
 #top-right,
-#top-right ul {
-	margin: 0;
+#top-right ul { 
+	margin: 0; 
 }
 
 #top-right li,
@@ -3601,7 +3601,7 @@ body:not(.device-touch) #portfolio {
 .portfolio-item .portfolio-image img {
 	display: block;
 	width: 276px;
-	height: 207px;
+	height: 276px;
 }
 
 body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-notitle .portfolio-image img {
@@ -3869,7 +3869,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 .postcontent .portfolio-3 .portfolio-item .portfolio-image a,
 .postcontent .portfolio-3 .portfolio-item .portfolio-image img {
 	width: 276px;
-	height: 207px;
+	height: 276px;
 }
 
 .postcontent .portfolio-3 .portfolio-desc h3 { font-size: 18px; }
@@ -13329,3 +13329,4 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
+
