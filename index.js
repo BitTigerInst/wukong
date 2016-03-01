@@ -13,6 +13,14 @@ app.use(express.static(__dirname + '/public'));
 
 app.use('/api/v1', require('./api')(wagner));
 
+//// Handle 404
+app.use(function(req, res) {
+  res.status(404);
+  res.redirect('/404.html');
+  //res.send('/public/404.html');
+  //express.static(__dirname + '/public/404.html');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
