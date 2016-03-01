@@ -21,7 +21,7 @@
     "superagent": "^1.7.2"
   },
   "engines": {
-    "node": "0.12.7"
+    "node": "4.2.1"
   },
   "repository": {
     "type": "git",
