@@ -18,12 +18,28 @@ Built by using MEAN stack, and deployed on Heroku.
 
 ## How to run wukong
 
+### Run wukong locally
+
+__Step 1. Install mongodb and nodejs__
+
 1. Install [mongodb](https://www.mongodb.org/downloads#production) and [node](https://nodejs.org/en/)
 2. Create data directory for mongodb store data: ` mkdir ~/Desktop/dbdata`
 3. Start mongodb server: ` mongod --dbpath ~/Desktop/dbdata`
-4. Clone wukong from github: ` $ git clone https://github.com/BitTigerInst/wukong.git `
-5. Go into wukong forlder and install node package: ` cd wukong && npm install `
-6. Run wukong: ` node index `
+
+__Step 2. get wukong source code and install package__
+
+1. Clone wukong from github: ` $ git clone https://github.com/BitTigerInst/wukong.git `
+2. Go into wukong forlder and install node package: ` cd wukong && npm install `
+3. Run wukong: ` node index `
+
+### Deploy wukong to heroku
+
+1. Create a heroku account [more to read](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
+2. Login heroku: ` heroku login `
+3. Inside wukong, create app on heroku. ` heroku create `
+4. Add mongoLab add on ` heroku addons:create mongolab ` [more to read](https://devcenter.heroku.com/articles/mongolab#adding-mlab-as-a-heroku-add-on)
+5. Push code to heroku ` git push heroku master `
+6. Open it on your browser ` heroku open `
 
 ## Who we are:
 
