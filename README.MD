@@ -1,6 +1,8 @@
 # wukong
 > https://wukong-bittiger.herokuapp.com
 
+> wukong-phase-1 demo: https://vimeo.com/157355174
+
 ## Description
 
 Inspired by DMK - Rong Zou, wukong is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
