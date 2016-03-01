@@ -1,9 +1,9 @@
-# wukong!
+# wukong
 > https://wukong-bittiger.herokuapp.com
 
 ## Description
 
-Inspired by DMK - Rong Zou, wukong! is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
+Inspired by DMK - Rong Zou, wukong is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
 
 **How does it work?**
 
@@ -16,15 +16,24 @@ Inspired by DMK - Rong Zou, wukong! is a platform built by Team BJGX (白驹过�
 
 Built by using MEAN stack, and deployed on Heroku.
 
+## How to run wukong
+
+1. Install [mongodb](https://www.mongodb.org/downloads#production) and [node](https://nodejs.org/en/)
+2. Create data directory for mongodb store data: ` mkdir ~/Desktop/dbdata`
+3. Start mongodb server: ` mongod --dbpath ~/Desktop/dbdata`
+4. Clone wukong from github: ` $ git clone https://github.com/BitTigerInst/wukong.git `
+5. Go into wukong forlder and install node package: ` cd wukong && npm install `
+6. Run wukong: ` node index `
+
 ## Who we are:
 
-### <img src="public/images/logos/logo.png" width="124px" height="124px" /> 白驹过隙
+### <img src="public/images/markdown-logos/logo.png" width="124px" height="124px" /> BJGX-白驹过隙
 **More to be add here**
 
-### <img src="public/images/logos/bittigerlogo.png" width="124px" height="124px" /> BitTiger
+### <img src="public/images/markdown-logos/bittigerlogo.png" width="124px" height="124px" /> BitTiger
 **More to be add here**
 
-### <img src="public/images/logos/meanlogo.png" width="124px" height="124px" /> MEAN Stack
+### <img src="public/images/markdown-logos/meanlogo.png" width="124px" height="124px" /> MEAN Stack
 
 MEAN is a framework for an easy starting point with [MongoDB](https://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](https://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 
