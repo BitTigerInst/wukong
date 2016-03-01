@@ -1,11 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: Canvas
-	Theme URI: http://themes.semicolonweb.com/html/canvas
-	Description: The Multi-Purpose Template
-	Author: SemiColonWeb
-	Author URI: http://themeforest.net/user/semicolonweb
-	Version: 3.1.1
+	Project Name: Wukong;
+	Filetype: Main css file;
 
 -----------------------------------------------------------------------------------*/
 
@@ -54,8 +50,8 @@ dl, dt, dd, ol, ul, li {
 
 body {
 	line-height: 1.5;
-	color: #555;
-	font-family: 'Lato', sans-serif;
+	color: #000000;
+	font-family: '微软雅黑', sans-serif;
 }
 
 a {
@@ -976,6 +972,8 @@ body.stretched #header.full-header .container {
 	border-right: 1px solid #EEE;
 }
 
+
+
 #header.transparent-header.full-header #logo { border-right-color: rgba(0,0,0,0.1); }
 
 #logo a {
@@ -1071,6 +1069,40 @@ body.stretched #header.full-header .container {
 	list-style: none;
 	height: 100px;
 	margin: 0;
+}
+
+
+#primary-menu ul div.top-link-section {
+	display: none;
+	pointer-events: none;
+	position: absolute;
+	z-index: 210;
+	line-height: 1.5;
+	background: #FFF;
+	border: 0;
+	top: 44px;
+	left: 0;
+	width: 140px;
+	margin: 0;
+	border-top: 1px solid #1ABC9C;
+	border-bottom: 1px solid #EEE;
+	box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+}
+
+#primary-menu li:hover div.top-link-section { pointer-events: auto; }
+
+#primary-menu ul div.top-link-section {
+	padding: 25px;
+	left: 0;
+	width: 280px;
+}
+
+
+#primary-menu.fright ul div.top-link-section {
+	left: auto;
+	right: 0;
 }
 
 #primary-menu > ul { float: left; }
@@ -2302,6 +2334,46 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 
 
 /* ----------------------------------------------------------------
+	NavBar Right
+-----------------------------------------------------------------*/
+
+#top-right,
+#top-right ul { 
+	margin: 0; 
+}
+
+#top-right li,
+#top-right li a {
+	display: block;
+	position: relative;
+	float: left;
+	width: auto;
+	overflow: hidden;
+	height: 44px;
+	line-height: 44px;
+}
+
+#top-right li { border-left: 1px solid #EEE; }
+
+#top-right li:first-child { border-left: 0 !important; }
+
+#top-right li a {
+	float: none;
+	width: 40px;
+	font-weight: bold;
+	color: #666;
+	-webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out;
+	-o-transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out;
+	transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out;
+}
+
+#top-right li a:hover {
+	color: #FFF !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+/* ----------------------------------------------------------------
 	One Page
 -----------------------------------------------------------------*/
 
@@ -3529,7 +3601,7 @@ body:not(.device-touch) #portfolio {
 .portfolio-item .portfolio-image img {
 	display: block;
 	width: 276px;
-	height: 207px;
+	height: 276px;
 }
 
 body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-notitle .portfolio-image img {
@@ -3797,7 +3869,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-desc { display: none 
 .postcontent .portfolio-3 .portfolio-item .portfolio-image a,
 .postcontent .portfolio-3 .portfolio-item .portfolio-image img {
 	width: 276px;
-	height: 207px;
+	height: 276px;
 }
 
 .postcontent .portfolio-3 .portfolio-desc h3 { font-size: 18px; }
@@ -11632,8 +11704,8 @@ button.toast-close-button {
 
 #footer {
 	position: relative;
-	background-color: #DDD;
-	border-top: 5px solid rgba(0,0,0,0.2);
+	background-color: #444;
+	color: #f0f0f0;
 }
 
 .device-lg.sticky-footer #top-bar,
@@ -11693,7 +11765,7 @@ button.toast-close-button {
 
 #copyrights {
 	padding: 40px 0;
-	background-color: #DDD;
+	background-color: #444;
 	font-size: 14px;
 	line-height: 1.8;
 }
@@ -11710,7 +11782,7 @@ button.toast-close-button {
 .copyright-links a {
 	display: inline-block;
 	margin: 0 3px;
-	color: #333;
+	color: #7d8186;
 	border-bottom: 1px dotted #444;
 }
 

@@ -14,6 +14,7 @@
     "mongoose": "^4.4.4",
     "serve-favicon": "^2.3.0",
     "superagent": "^1.7.2",
+    "underscore": "^1.8.3",
     "wagner-core": "^0.2.0"
   },
   "devDependencies": {
@@ -21,7 +22,7 @@
     "superagent": "^1.7.2"
   },
   "engines": {
-    "node": "0.12.7"
+    "node": "4.2.1"
   },
   "repository": {
     "type": "git",
