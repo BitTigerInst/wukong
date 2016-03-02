@@ -1,9 +1,11 @@
-# wukong!
+# wukong
 > https://wukong-bittiger.herokuapp.com
+
+> wukong-phase-1 demo: https://vimeo.com/157355174
 
 ## Description
 
-Inspired by DMK - Rong Zou, wukong! is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
+Inspired by DMK - Rong Zou, wukong is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
 
 **How does it work?**
 
@@ -16,15 +18,40 @@ Inspired by DMK - Rong Zou, wukong! is a platform built by Team BJGX (白驹过�
 
 Built by using MEAN stack, and deployed on Heroku.
 
+## How to run wukong
+
+### Run wukong locally
+
+__Step 1. Install mongodb and nodejs__
+
+1. Install [mongodb](https://www.mongodb.org/downloads#production) and [node](https://nodejs.org/en/)
+2. Create data directory for mongodb store data: ` mkdir ~/Desktop/dbdata`
+3. Start mongodb server: ` mongod --dbpath ~/Desktop/dbdata`
+
+__Step 2. get wukong source code and install package__
+
+1. Clone wukong from github: ` $ git clone https://github.com/BitTigerInst/wukong.git `
+2. Go into wukong forlder and install node package: ` cd wukong && npm install `
+3. Run wukong: ` node index `
+
+### Deploy wukong to heroku
+
+1. Create a heroku account [more to read](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
+2. Login heroku: ` heroku login `
+3. Inside wukong, create app on heroku. ` heroku create `
+4. Add mongoLab add on ` heroku addons:create mongolab ` [more to read](https://devcenter.heroku.com/articles/mongolab#adding-mlab-as-a-heroku-add-on)
+5. Push code to heroku ` git push heroku master `
+6. Open it on your browser ` heroku open `
+
 ## Who we are:
 
-### <img src="public/images/logos/logo.png" width="124px" height="124px" /> 白驹过隙
+### <img src="public/images/markdown-logos/logo.png" width="124px" height="124px" /> BJGX-白驹过隙
 **More to be add here**
 
-### <img src="public/images/logos/bittigerlogo.png" width="124px" height="124px" /> BitTiger
+### <img src="public/images/markdown-logos/bittigerlogo.png" width="124px" height="124px" /> BitTiger
 **More to be add here**
 
-### <img src="public/images/logos/meanlogo.png" width="124px" height="124px" /> MEAN Stack
+### <img src="public/images/markdown-logos/meanlogo.png" width="124px" height="124px" /> MEAN Stack
 
 MEAN is a framework for an easy starting point with [MongoDB](https://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](https://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 
