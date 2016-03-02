@@ -38,10 +38,10 @@ __Step 2. get wukong source code and install package__
 
 1. Create a heroku account [more to read](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
 2. Login heroku: ` heroku login `
-3. Inside wukong, create app on heroku. ` heroku create `
-4. Add mongoLab add on ` heroku addons:create mongolab ` [more to read](https://devcenter.heroku.com/articles/mongolab#adding-mlab-as-a-heroku-add-on)
-5. Push code to heroku ` git push heroku master `
-6. Open it on your browser ` heroku open `
+3. Inside wukong, create app on heroku: ` heroku create `. In this case, heroku will create a random name for you as the frist part of url. i.e. "https://random-name.herokuapp.com". You could also specify a name: ` heroku create wukong-bittiger `, then the name will become the frist part of url. i.e. "https://wukong-bittiger.herokuapp.com"
+4. Add mongoLab as add on: ` heroku addons:create mongolab `. This add on need account verification, you need to set up a valid payment information, by default, mongolab will set up a free plan for you, no need to worry about any charges more to read [here](https://elements.heroku.com/buttons/mongolab/hello-mongoose) and [here](https://devcenter.heroku.com/articles/mongolab#adding-mlab-as-a-heroku-add-on)
+5. Push code to heroku: ` git push heroku master `
+6. Open it on your browser: ` heroku open `
 
 ## Who we are:
 
