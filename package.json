@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha ./test/test"
+    "test": "mocha ./test/test",
+    "commit": "git-cz"
   },
   "dependencies": {
     "express": "4.13.3",
@@ -18,9 +19,9 @@
     "wagner-core": "^0.2.0"
   },
   "devDependencies": {
-    "commitizen": "^2.6.1",
+    "commitizen": "^2.3.0",
     "mocha": "^2.4.5",
-    "rb-conventional-changelog": "^1.1.9",
+    "rb-conventional-changelog": "1.1.4",
     "superagent": "^1.7.2"
   },
   "engines": {
@@ -37,8 +38,8 @@
   ],
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "node_modules/cz-conventional-changelog"
     }
-  }
+  },
   "license": "MIT"
 }
