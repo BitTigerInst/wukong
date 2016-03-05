@@ -1,4 +1,3 @@
-// comment
 var express = require('express');
 var status = require('http-status');
 
