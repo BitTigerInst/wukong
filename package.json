@@ -18,7 +18,9 @@
     "wagner-core": "^0.2.0"
   },
   "devDependencies": {
+    "commitizen": "^2.6.1",
     "mocha": "^2.4.5",
+    "rb-conventional-changelog": "^1.1.9",
     "superagent": "^1.7.2"
   },
   "engines": {
@@ -33,5 +35,10 @@
     "heroku",
     "express"
   ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
   "license": "MIT"
 }
