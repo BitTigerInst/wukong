@@ -18,13 +18,19 @@ submitting an issue to our [GitHub Repository][github].
 
 ## <a name="commit"></a> Git Commit Guidelines
 
+> [Writing good commit messages](https://github.com/erlang/otp/wiki/Writing-good-commit-messages)
+
+> [On commit messages](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
+
+### Our rules
+
 We have very precise rules over how our git commit messages can be formatted.  This leads to **more
 readable messages** that are easy to follow when looking through the **project history**.
 
 We use a CLI wizard ([Commitizen](https://github.com/commitizen/cz-cli)) for commit message formatting. 
 And use [rb-conventional-changelog](https://www.npmjs.com/package/rb-conventional-changelog) as the adapter of Commitizen. 
 
-Simply use ` git cz ` instead of ` git commit ` when committing in your terminal after staging your changes in git.
+Simply use ` npm rum commit ` instead of ` git commit ` when committing in your terminal after staging your changes in git.
 
 See short demo below:
 
