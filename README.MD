@@ -1,3 +1,5 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 # wukong
 > website: https://wukong-bittiger.herokuapp.com
 
@@ -38,20 +40,20 @@ __Step 2. get wukong source code and install package__
 
 1. Create a heroku account [more to read](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
 2. Login heroku: ` heroku login `
-3. Inside wukong, create app on heroku: ` heroku create `. In this case, heroku will create a random name for you as the frist part of url. i.e. "https://random-name.herokuapp.com". You could also specify a name: ` heroku create wukong-bittiger `, then the name will become the frist part of url. i.e. "https://wukong-bittiger.herokuapp.com"
+3. Inside wukong, create app on heroku: ` heroku create `. In this case, heroku will create a random name for you as the frist part of url. i.e. "https://random-name.herokuapp.com". You could also specify a name: ` heroku create wukong-bittiger `, then the name will become the frist part of url. i.e. "https://wukong-bittiger.herokuapp.com". __Notice:__ we already take the name "wukong-bittiger" as its offical name, so if you do command: ` heroku create wukong-bittiger `, you will encounter an error message "name already be taken". In this case, try other names.
 4. Add mongoLab as add on: ` heroku addons:create mongolab `. This add on need account verification, you need to set up a valid payment information, by default, mongolab will set up a free plan for you, no need to worry about any charges. More to read [here](https://elements.heroku.com/buttons/mongolab/hello-mongoose) and [here](https://devcenter.heroku.com/articles/mongolab#adding-mlab-as-a-heroku-add-on)
 5. Push code to heroku: ` git push heroku master `
 6. Open it on your browser: ` heroku open `
 
 ## Who we are:
 
-### <img src="public/images/markdown-logos/logo.png" width="124px" height="124px" /> BJGX-白驹过隙
+### <img src="public/images/markdown/logo.png" width="124px" height="124px" /> BJGX-白驹过隙
 **More to be add here**
 
-### <img src="public/images/markdown-logos/bittigerlogo.png" width="124px" height="124px" /> BitTiger
+### <img src="public/images/markdown/bittigerlogo.png" width="124px" height="124px" /> BitTiger
 **More to be add here**
 
-### <img src="public/images/markdown-logos/meanlogo.png" width="124px" height="124px" /> MEAN Stack
+### <img src="public/images/markdown/meanlogo.png" width="124px" height="124px" /> MEAN Stack
 
 MEAN is a framework for an easy starting point with [MongoDB](https://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](https://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 
