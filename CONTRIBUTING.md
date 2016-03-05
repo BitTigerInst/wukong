@@ -2,7 +2,7 @@
 
 Pay attention BJGX-白驹过隙 team member, before you commit there is the guidelines you should follow:
 
- - [et up wukong](#setup)
+ - [Set up wukong](#setup)
  - [Issues and Bugs](#issue)
  - [Commit Message Guidelines](#commit)
  - [Team workflow](#workflow)
@@ -99,14 +99,14 @@ Before you submit your pull request to develop branch consider the following gui
 
 Instead of Merge，我们用rebase去整合代码。请先阅读下面两个资料：
 
-＊ [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow)，阅读到Where To Go From Here之前的部分即可，我们基本采用这个工作流程。
-＊ [Best Way To Merge A (GitHub) Pull Request](http://blog.differential.com/best-way-to-merge-a-github-pull-request/)
+* [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow)，阅读到Where To Go From Here之前的部分即可，我们基本采用这个工作流程。
+* [Best Way To Merge A (GitHub) Pull Request](http://blog.differential.com/best-way-to-merge-a-github-pull-request/)
 
 具体工作流程：
 
-＊ master branch放能稳定运行的代码，
-＊ develop branch用来我自己开发和merge 组员代码以及测试。
-＊ 组员在自己branch开发，完成后，先__rebase__下develop的代码，再发送pull request到develop branch。
-＊ 我们在pull request上作code review。
-＊ develop branch稳定后merge到master。
-＊ 另外，组长如果发现有问题需要改进，便创建issue，assign给组员。
+* master branch放能稳定运行的代码，
+* develop branch用来我自己开发和merge 组员代码以及测试。
+* 组员在自己branch开发，完成后，先__rebase__下develop的代码，再发送pull request到develop branch。
+* 我们在pull request上作code review。
+* develop branch稳定后merge到master。
+* 另外，组长如果发现有问题需要改进，便创建issue，assign给组员。
