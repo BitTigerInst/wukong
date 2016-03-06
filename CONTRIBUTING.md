@@ -105,8 +105,8 @@ Instead of "merge", we use "rebase" to combine codes. Please read the following 
 Detailed workflow:
 
 * "master branch" contains the codes that run stable and robust.
-* "develop branch" is used for group leader to develop his own codes as well as combine and test other teammates' codes.
+* "develop branch" is used for group leader test and merge other teammates' codes.
 * Team members develop in their own branches first. After completing their own work, they will rebase the codes in develop branch. Afterwards, they pull request to develop branch.
-* Review codes in pull request.
-* Merge codes to master branch after testing in develop branch.
-* If group leader finds problem to modify, he will create an issue and assign it to team members.
+* Code review in pull request.
+* Merge codes to master branch after stable in develop branch.
+* Group leader will create issue and assign to relevant team members for bugs / enhancement in code.
