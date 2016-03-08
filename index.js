@@ -21,6 +21,12 @@ app.use(function(req, res) {
   //express.static(__dirname + '/public/404.html');
 });
 
+// Handle server side error
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
