@@ -1,3 +1,5 @@
+var express = require('express');
+
 function setupAuth(User, app) {
   var passport = require('passport');
   var FacebookStrategy = require('passport-facebook').Strategy;
@@ -22,7 +24,7 @@ function setupAuth(User, app) {
     },
     function(accessToken, refreshToken, profile, done) {
       if (!profile.displayName || !profile.displayName.length) {
-        return done('No displayName associated with this account!');
+        return done('No emails associated with this account!');
       }
 
       User.findOneAndUpdate(
@@ -53,6 +55,7 @@ function setupAuth(User, app) {
 
   app.get('/auth/facebook/callback',
     passport.authenticate('facebook', { failureRedirect: '/fail' }),
+    //express.static(__dirname + '/angular/index.html'));
     function(req, res) {
       res.send('Welcome, ' + req.user.profile.username);
     });

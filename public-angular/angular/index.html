@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="wukong">
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.2.js"></script>
+    <script src="/dist/app.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="wukong-welcome-page">
+      <welcome-title></welcome-title>
+      <div class="col-sm-6 row">
+        <dynamic-news></dynamic-news>
+        <project-list></project-list>
+      </div>
+      <div class="col-sm-3">
+        <user-attribute-board></user-attribute-board>
+      </div>
+        <div class="content-wrapper" ng-view></div>
+    </div>
+  </body>
+</html>
