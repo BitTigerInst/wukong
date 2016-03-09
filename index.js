@@ -11,6 +11,16 @@ app.set('port', (process.env.PORT || 5000));
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public'));
 
+wagner.invoke(require('./auth'), { app: app });
+
+app.get('/auth/facebook/callback', function(req,res) {
+  res.send("Successed!")
+});
+
+app.get('/auth/facebook/fail', function(req,res) {
+  res.send("failed!")
+});
+
 app.use('/api/v1', require('./api')(wagner));
 
 //// Handle 404
