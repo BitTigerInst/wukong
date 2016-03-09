@@ -55,9 +55,9 @@ function setupAuth(User, app) {
 
   app.get('/auth/facebook/callback',
     passport.authenticate('facebook', { failureRedirect: '/fail' }),
-    //express.static(__dirname + '/angular/index.html'));
     function(req, res) {
-      res.send('Welcome, ' + req.user.profile.username);
+      //res.send('Welcome, ' + req.user.profile.username);
+      res.redirect('/welcome.html');
     });
 }
 

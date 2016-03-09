@@ -38,7 +38,7 @@ exports.UserAttributeBoard = ($scope, $sce, $http, $timeout) => {
    };
 };
 
-exports.DynamicNews = ($scope, $sce, $http, $timeout) => {
+exports.DynamicNewsController = ($scope, $sce, $http, $timeout) => {
   $scope.content = "news here";
 };
 
