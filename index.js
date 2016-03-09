@@ -10,6 +10,9 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/angular'));
+
+wagner.invoke(require('./auth'), { app: app });
 
 app.use('/api/v1', require('./api')(wagner));
 
