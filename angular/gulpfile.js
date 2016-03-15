@@ -5,9 +5,12 @@ gulp.task('browserify', function() {
   return gulp.
     src('js/app.js').
     pipe(browserify()).
-    pipe(gulp.dest('./dist'));
+    pipe(gulp.dest('../public/angular/dist'));
 });
 
 gulp.task('watch', function() {
   gulp.watch(['js/*.js', 'index.html'], ['browserify']);
 });
+
+gulp.task('default',['browserify']);
+

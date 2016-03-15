@@ -1,25 +1,25 @@
-exports.welcomeTitle = () => {
+exports.welcomeTitle = function() {
   return {
     controller: 'WelcomeTitleController',
     templateUrl: '/views/welcome-title.html'
   };
 };
 
-exports.userAttributeBoard = () => {
+exports.userAttributeBoard = function() {
   return {
     controller: 'UserAttributeBoard',
     templateUrl: '/views/user-attribute-board.html'
   };
 };
 
-exports.projectList = () => {
+exports.projectList = function() {
   return {
     controller: 'ProjectListController',
     templateUrl: '/views/project-list.html'
   };
 };
 
-exports.dynamicNews = () => {
+exports.dynamicNews = function() {
   return {
     controller: 'DynamicNewsController',
     templateUrl: '/views/dynamic-news.html'

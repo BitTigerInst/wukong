@@ -1,0 +1,40 @@
+body {
+  width:100%;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+md-content.md-default-theme, md-content {
+  background-color: rgba(163, 160, 160, 0.45);
+}
+
+.carddemoBasicUsage .card-media {
+  background-color: #999999; }
+
+md-card > h2 {
+  padding-left : 15px;
+
+}
+
+.note {
+  width: 100%;
+  box-sizing:border-box;
+
+}
+
+p.good {
+  line-height: 30px;
+  padding-left: 10px;
+  margin: 10px;
+    box-sizing:border-box;
+    background-color: rgba(0, 128, 0, 0.31);
+}
+
+p.warn {
+
+  line-height: 30px;
+  padding-left: 10px;
+  margin: 10px;
+    box-sizing:border-box;
+    background-color: rgba(204, 2, 5, 0.31);
+}

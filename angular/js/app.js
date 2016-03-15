@@ -3,7 +3,7 @@ var directives = require('./directives');
 var services = require('./services');
 var _ = require('underscore');
 
-var components = angular.module('wukong.components', ['ng', 'ui.bootstrap', 'ngAnimate']);
+var components = angular.module('wukong.components', ['ng', 'ngMaterial']);
 
 _.each(controllers, function(controller, name) {
   components.controller(name, controller);
