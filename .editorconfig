@@ -1,25 +1,24 @@
-# EditorConfig helps developers define and maintain consistent
-# coding styles between different editors and IDEs
-# editorconfig.org
+# EditorConfig is awesome: http://EditorConfig.org
 
+# top-most EditorConfig file
 root = true
 
-
+# Unix-style newlines with a newline ending every file
 [*]
-
-# change these settings to your own preference
-indent_style = space
-indent_size = 2
-
-# we recommend you to keep these unchanged
 end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.md]
-trim_trailing_whitespace = false
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,py}]
+charset = utf-8
 
-[{package,bower}.json]
+# 4 space indentation
+[*]
 indent_style = space
 indent_size = 2
+
+# Indentation override for all JS under lib directory
+# [lib/**.js]
+# indent_style = space
+# indent_size = 4
