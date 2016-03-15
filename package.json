@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "startdev": "nodemon index.js",
     "test": "mocha ./test/test",
     "commit": "git-cz"
   },
@@ -15,6 +16,7 @@
     "http-status": "^0.2.0",
     "mongodb": "^2.1.7",
     "mongoose": "^4.4.4",
+    "nodemon": "^1.9.1",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.0",
     "serve-favicon": "^2.3.0",

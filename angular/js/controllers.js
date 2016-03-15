@@ -1,8 +1,8 @@
-exports.WelcomeTitleController = ($scope, $http, $timeout) => {
+exports.WelcomeTitleController = function($scope, $http, $timeout){
   $scope.title = "Welcome Back/ Welcome new hacker";
 };
 
-exports.UserAttributeBoard = ($scope, $sce, $http, $timeout) => {
+exports.UserAttributeBoard = function($scope) {
   $scope.range = [
     { label: 'Beginner'},
     { label: 'Level' },
@@ -13,58 +13,26 @@ exports.UserAttributeBoard = ($scope, $sce, $http, $timeout) => {
     { label: 'Registratered Events'},
     { label: 'Else'}
   ];
-  $scope.dynamicPopover = {
-     content: 'Hello, World!',
-     templateUrl: 'myPopoverTemplate.html',
-     title: 'Title'
-   };
-
-   $scope.placement = {
-     options: [
-       'top',
-       'top-left',
-       'top-right',
-       'bottom',
-       'bottom-left',
-       'bottom-right',
-       'left',
-       'left-top',
-       'left-bottom',
-       'right',
-       'right-top',
-       'right-bottom'
-     ],
-     selected: 'top'
-   };
 };
 
-exports.DynamicNewsController = ($scope, $sce, $http, $timeout) => {
-  $scope.content = "news here";
+exports.DynamicNewsController = function($scope){
+  $scope.news = [
+    { header: "Today's Lecture", content: "Git (/ɡɪt/[5]) is a widely used source code management system for software development. It is a distributed revision control system with an emphasis on speed,[6] data integrity,[7] and support for distributed, non-linear workflows.[8] Git was initially designed and developed in 2005 by Linux kernel developers (including Linus Torvalds) for Linux kernel development.[9]" },
+    { header: "Ongoing Projects", content: "Hatch Mott MacDonald specializes in developing parking plans and parking management programs. Our team has extensive experience in developing sustainable parking solutions, drafting policies and regulatory language for parking programs, helping the clients understand the true cost of parking, offering site specific parking solutions, providing parking restoration and management services, and parking system monetization."},
+    { header: "Tomorrow's event", content:  "btw, this post is a bit of a followup to my previous post,s, I found a little clarity & content ☺)Update (8/04/15): I’ve created an updated version for Angular-Material 0.10.0 on CodePen."},
+    { header: "Next 7 days Events", content: ""}
+  ];
 };
 
-exports.ProjectListController = ($scope, $sce, $http, $timeout) => {
-  $scope.oneAtATime = true;
-
-  $scope.groups = [
+exports.ProjectListController = function($scope){
+  $scope.projects = [
     {
-      title: 'Project 1',
-      content: 'Dynamic Group Body - 1'
+      projectName: 'Project 1',
+      description: 'Dynamic Group Body - 1'
     },
     {
-      title: 'Project 2',
-      content: 'Dynamic Group Body - 2'
+      projectName: 'Project 2',
+      description: 'Dynamic Group Body - 2'
     }
   ];
-
-  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-  $scope.addItem = function() {
-    var newItemNo = $scope.items.length + 1;
-    $scope.items.push('Item ' + newItemNo);
-  };
-
-  $scope.status = {
-    isFirstOpen: true,
-    isFirstDisabled: false
-  };
 };

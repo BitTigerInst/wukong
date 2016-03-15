@@ -1,4 +1,5 @@
 var express = require('express');
+var path = require('path');
 
 function setupAuth(User, app) {
   var passport = require('passport');
@@ -56,8 +57,9 @@ function setupAuth(User, app) {
   app.get('/auth/facebook/callback',
     passport.authenticate('facebook', { failureRedirect: '/fail' }),
     function(req, res) {
+      //console.log(__dirname, '/angular/welcome.html');
+      res.sendfile(path.join(__dirname, '/angular/welcome.html'));
       //res.send('Welcome, ' + req.user.profile.username);
-      res.redirect('/welcome.html');
     });
 }
 
