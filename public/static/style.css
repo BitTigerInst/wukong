@@ -1075,14 +1075,18 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul div.facebook{
 	list-style: none;
-	height: 100px;
+	height: 100%;
 	margin: 0;
+}
+
+#primary-menu ul div.facebook a.small{
+  margin-top: 4%;
 }
 
 #primary-menu ul div.facebook a{
 	display:inline-block;
 	width: 30%;
-	margin-top: 4%;
+	margin-top: 9%;
 	margin-bottom: 5%;
 	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
