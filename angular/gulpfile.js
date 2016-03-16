@@ -15,7 +15,7 @@ gulp.task('clean', function() {
 gulp.task('views', function() {
   return gulp.
     src(['views/**/*']).
-    pipe(gulp.dest('../public/angular/views'));
+    pipe(gulp.dest('../public/angular/views/'));
 })
 
 gulp.task('styles', function() {
@@ -28,7 +28,6 @@ gulp.task('scripts', function() {
   return gulp.
     src('js/app.js').
     pipe(browserify()).
-    pipe(uglify()).
     pipe(gulp.dest('../public/angular/dist/js/'));
 });
 

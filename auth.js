@@ -57,8 +57,7 @@ function setupAuth(User, app) {
   app.get('/auth/facebook/callback',
     passport.authenticate('facebook', { failureRedirect: '/fail' }),
     function(req, res) {
-      //console.log(__dirname, '/angular/welcome.html');
-      res.sendfile(path.join(__dirname, '/angular/welcome.html'));
+      res.sendFile(path.join(__dirname, '/angular/welcome.html'));
       //res.send('Welcome, ' + req.user.profile.username);
     });
 }
