@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb/legacy",
+  "plugins": ["angular"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "angular": true,
+    "module": true,
+    "inject": true
+  },
+  "rules": {
+    "new-cap": 1,
+    "no-console": 0
+  }
+}

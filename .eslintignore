@@ -1,0 +1,8 @@
+# /node_modules and /bower_components ignored by default
+
+# Ignore public folder
+public/
+
+# Ignore built files except build/index.js
+# build/
+# !build/index.js

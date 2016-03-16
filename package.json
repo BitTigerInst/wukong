@@ -10,10 +10,10 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "body-parser": "~1.15.0",
+    "body-parser": "^1.15.0",
     "express": "4.13.3",
-    "express-session": "~1.13.0",
-    "http-status": "~0.2.0",
+    "express-session": "^1.13.0",
+    "http-status": "^0.2.0",
     "mongodb": "^2.1.7",
     "mongoose": "^4.4.4",
     "nodemon": "^1.9.1",
@@ -21,19 +21,22 @@
     "passport-facebook": "^2.1.0",
     "serve-favicon": "^2.3.0",
     "superagent": "^1.7.2",
-    "underscore": "~1.8.3",
-    "wagner-core": "~0.2.0"
+    "underscore": "^1.8.3",
+    "wagner-core": "^0.2.0"
   },
   "devDependencies": {
-    "commitizen": "~2.3.0",
-    "del": "~2.2.0",
-    "gulp": "~3.9.1",
-    "gulp-browserify": "~0.5.1",
-    "gulp-concat": "~2.6.0",
-    "gulp-uglify": "~1.5.3",
-    "mocha": "~2.4.5",
+    "commitizen": "^2.3.0",
+    "del": "^2.2.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-angular": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.3",
+    "mocha": "^2.4.5",
     "rb-conventional-changelog": "1.1.4",
-    "superagent": "~1.7.2"
+    "superagent": "^1.7.2"
   },
   "engines": {
     "node": "4.2.1"
