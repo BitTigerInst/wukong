@@ -63,6 +63,7 @@ data/
 tests/results/**
 modules/public/
 modules/views/
+/public
 /public/build/
 /packages/contrib/
 /packages/**/**/public/assets/lib
