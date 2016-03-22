@@ -10,7 +10,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
 
-app.use(express.static(__dirname + '/static/'));
+app.use(express.static(__dirname + '/public/static'));
 app.use(express.static(__dirname + '/public/angular'));
 // comment the following line in production
 app.use(express.static(__dirname + '/angular'));
