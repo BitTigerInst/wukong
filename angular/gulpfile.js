@@ -7,7 +7,8 @@ var concat = require('gulp-concat');
 
 gulp.task('clean', function () {
   return del([
-    '../public/angular/*/**'
+    '../public/angular/dist/**/*',
+    '../public/angular/views/'
   ], { force: true });
 });
 
