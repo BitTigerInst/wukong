@@ -1030,6 +1030,16 @@ var SEMICOLON = SEMICOLON || {};
 				}
 			});
 
+      $(function() {
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 1) {
+            $("#primary-menu ul div.facebook a").addClass('small');
+          } else {
+            $("#primary-menu ul div.facebook a").removeClass("small");
+          }
+        });
+      });
 		},
 
 		menufunctions: function(){

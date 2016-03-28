@@ -1,0 +1,17 @@
+
+    <div class="form-group" ng-class="{'has-error' : !inputModel}">
+      <div style="text-align: center; border: solid 1px black; width: 300px;">
+        <h3>User Name</h3>
+        <span>Beginner</span>
+      </div>
+      <div ng-repeat="i in range">
+          <md-button aria-label="Play" style="border: solid 1px; width: 300px;">
+          <md-tooltip md-direction="left">
+            Enter the description here,
+            this is the details of each part
+          </md-tooltip>
+            {{i.label}}
+          </md-button>
+      </div>
+
+    </div>

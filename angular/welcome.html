@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.js"></script>
+    <script src="/bower_components/angular-messages/angular-messages.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.2.js"></script>
+    <script src="/dist/js/app.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" src="/dist/css/all.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+  </head>
+  <body ng-app="wukong" ng-cloak>
+
+  <div layout="row">
+    <div flex=100>
+      <welcome-title></welcome-title>
+    </div>
+  </div>
+  <div layout="row">
+    <div flex=50>
+      <div layout="column">
+        <div flex flex-offset="35">
+          <dynamic-news></dynamic-news>
+        </div>
+        <div flex flex-offset="35">
+          <project-list></project-list>
+        </div>
+      </div>
+    </div>
+    <div flex=50 flex-offset="20">
+      <user-attribute-board></user-attribute-board>
+    </div>
+  </div>
+
+
+
+
+</body>
+  <!-- <body ng-app="wukong" ng-cloak layout-fill >
+    <div class="wukong-welcome-page">
+      <div layout="row">
+        <welcome-title></welcome-title>
+        <dynamic-news></dynamic-news>
+        <user-attribute-board></user-attribute-board>
+        <project-list></project-list>
+      </div>
+
+      <div class="content-wrapper" ng-view></div>
+    </div>
+  </body> -->
+</html>

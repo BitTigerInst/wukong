@@ -9,16 +9,28 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(express.static(__dirname + '/public'));
+
+app.use(express.static(__dirname + '/public/static/'));
+app.use(express.static(__dirname + '/public/angular'));
+// comment the following line in production
+//app.use(express.static(__dirname + '/angular'));
+
+wagner.invoke(require('./auth'), { app: app });
 
 app.use('/api/v1', require('./api')(wagner));
 
-//// Handle 404
-app.use(function(req, res) {
-  res.status(404);
-  res.redirect('/404.html');
-  //res.send('/public/404.html');
-  //express.static(__dirname + '/public/404.html');
+// Handle 404
+//app.use(function(req, res) {
+//  res.status(404);
+//  res.redirect('/404.html');
+//  //res.send('/public/404.html');
+//  //express.static(__dirname + '/public/404.html');
+//});
+
+// Handle server side error
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
 });
 
 app.listen(app.get('port'), function() {

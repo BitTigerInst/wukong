@@ -1038,6 +1038,8 @@ body.stretched #header.full-header .container {
 	height: 100px;
 }
 
+
+
 #header.full-header #primary-menu > ul {
 	float: left;
 	padding-right: 15px;
@@ -1069,6 +1071,26 @@ body.stretched #header.full-header .container {
 	list-style: none;
 	height: 100px;
 	margin: 0;
+}
+
+#primary-menu ul div.facebook{
+	list-style: none;
+	height: 100%;
+	margin: 0;
+}
+
+#primary-menu ul div.facebook a.small{
+  margin-top: 4%;
+}
+
+#primary-menu ul div.facebook a{
+	display:inline-block;
+	width: 30%;
+	margin-top: 9%;
+	margin-bottom: 5%;
+	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 }
 
 
@@ -1132,6 +1154,8 @@ body.stretched #header.full-header .container {
 	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 }
+
+
 
 #primary-menu ul li span { display: none; }
 
