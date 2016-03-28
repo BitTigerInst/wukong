@@ -1040,6 +1040,17 @@ var SEMICOLON = SEMICOLON || {};
           }
         });
       });
+
+      $(function() {
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 2100) {
+            $("#primary-menu ul div.facebook_homepage a").addClass('small');
+          } else {
+            $("#primary-menu ul div.facebook_homepage a").removeClass("small");
+          }
+        });
+      });
 		},
 
 		menufunctions: function(){

@@ -1,14 +1,25 @@
-<div ng-cloak>
-  <md-content>
-    <md-tabs md-dynamic-height md-border-bottom >
-      <div ng-repeat="p in projects">
-        <md-tab label={{p.projectName}}>
-          <md-content class="md-padding">
-            <h1 class="md-display-2">{{p.projectName}}</h1>
-            <p>{{p.description}}</p>
-          </md-content>
-        </md-tab>
-      </div>
+<div>
+    <md-tabs md-selected="data.selectedIndex" >
+      <md-tab id="tab1">
+        <md-tab-label>Project Options</md-tab-label>
+        <md-tab-body>
+            <div ng-controller="ProjectListController"  ng-cloak>
+              <uib-accordion close-others="oneAtATime">
+                <uib-accordion-group heading="{{p.projectNumber}}" ng-repeat="p in projects" class = "darkfont">
+                <img ng-src="{{p.thumbnail}}" class="img-responsive pull-left projectImage" />
+                  <h3>{{p.projectName}}</h3>
+                  <md-divider></md-divider>
+                  <p>{{p.description}}</p>
+                </uib-accordion-group>
+                <uib-accordion>
+              </div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="tab2">
+        <md-tab-label>Existing Repositories</md-tab-label>
+        <md-tab-body>
+          View for Item #2 
+        </md-tab-body>
+      </md-tab>
     </md-tabs>
-  </md-content>
-</div>
+  </div>

@@ -1094,6 +1094,28 @@ body.stretched #header.full-header .container {
 }
 
 
+#primary-menu ul div.facebook_homepage{
+	list-style: none;
+	height: 100%;
+	margin: 0;
+}
+
+#primary-menu ul div.facebook_homepage a.small{
+  margin-top: 4%;
+}
+
+#primary-menu ul div.facebook_homepage a{
+	display:inline-block;
+	width: 30%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+}
+
+
+
 #primary-menu ul div.top-link-section {
 	display: none;
 	pointer-events: none;

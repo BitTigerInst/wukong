@@ -13,7 +13,7 @@ app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static(__dirname + '/public/static/'));
 app.use(express.static(__dirname + '/public/angular'));
 // comment the following line in production
-//app.use(express.static(__dirname + '/angular'));
+app.use(express.static(__dirname + '/angular'));
 
 wagner.invoke(require('./auth'), { app: app });
 

@@ -1,7 +1,28 @@
-<div style="border: solid 1px; height:200px; margin-bottom: 50px; overflow-y: scroll;">
-  <div ng-repeat="n in news">
-    <h1>{{n.header}}</h1>
-    <p>{{n.content}}</p>
-  </div>
+<div>
+  <v-accordion class="vAccordion--default" style = "padding: 10px">
+
+  <v-pane ng-repeat="n in news" expanded="n.isExpanded">
+    <v-pane-header>
+      <h4>{{ ::n.header}}</h4>
+    </v-pane-header>
+
+    <v-pane-content>
+      <md-subheader>Posted on March 20, 2016</md-subheader>
+      <div class = "md-list-item-text">{{  ::n.content}}</div>
+      <v-accordion ng-if="n.subpane">
+        <v-pane ng-repeat="n in n.subpane" ng-disabled="n.isDisabled">
+          <v-pane-header>
+            {{ ::n.eventsheader }}
+          </v-pane-header>
+          <v-pane-content>
+            {{ ::n.eventscontent }}
+          </v-pane-content>
+        </v-pane>
+      </v-accordion>
+
+    </v-pane-content>
+  </v-pane>
+
+</v-accordion>
 
 </div>

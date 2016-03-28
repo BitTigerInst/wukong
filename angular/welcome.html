@@ -13,17 +13,24 @@
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css"/>
-    <link rel="stylesheet" src="/dist/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/all.css">
+    <link href="/bower_components/v-accordion/dist/v-accordion.css" rel="stylesheet" />
+    <script src="/bower_components/v-accordion/dist/v-accordion.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   </head>
-  <body ng-app="wukong" ng-cloak>
+  <body ng-app="wukong" ng-cloak >
 
   <div layout="row">
-    <div flex=100>
+    <div flex = 100>
       <welcome-title></welcome-title>
     </div>
   </div>
-  <div layout="row">
+<div layout="row">
+    <div>
+      <br>
+    </div>
+  </div>
+<div layout="row"  class = "main">
     <div flex=50>
       <div layout="column">
         <div flex flex-offset="35">
