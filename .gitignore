@@ -54,7 +54,7 @@ node_modules/
 # Bower Files
 # --------------------
 .bower-*/
-bower_components
+// bower_components // can't ignore it, need to serve to public
 
 # --------------------
 # App Files
