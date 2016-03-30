@@ -14,7 +14,9 @@
     "angular-ui-bootstrap-bower": "0.13.4",
     "angular-messages": "^1.5.0",
     "angular-material": "^1.0.6",
-    "v-accordion": "^1.5.2"
+    "v-accordion": "^1.5.2",
+    "angular-bootstrap": "^1.2.5",
+    "font-awesome": "^4.5.0"
   },
   "analytics": false
 }
