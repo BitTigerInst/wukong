@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
+var runSequence = require('run-sequence');
 
 var del = require('del');
 var concat = require('gulp-concat');
@@ -29,7 +30,7 @@ gulp.task('background', function() {
 })
 
 gulp.task('styles', function() {
-  return gulp.src('style/*')
+  return gulp.src('style/**/*.css')
     .pipe(concat('all.css'))
     .pipe(gulp.dest('../public/angular/dist/css/'));
 });
@@ -44,5 +45,7 @@ gulp.task('watch', function() {
   gulp.watch(['js/*.js', 'index.html'], ['browserify']);
 });
 
-gulp.task('default',['clean', 'views','images','background', 'styles', 'scripts']);
+gulp.task('default', function(callback) {
+  runSequence('clean', 'views','images','background', 'styles', 'scripts', callback);
+});
 
