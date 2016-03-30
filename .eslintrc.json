@@ -12,6 +12,7 @@
   },
   "rules": {
     "new-cap": 1,
-    "no-console": 0
+    "no-console": 0,
+    "func-names": 1
   }
 }
