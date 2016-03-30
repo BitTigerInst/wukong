@@ -13,7 +13,8 @@
     "bootstrap": "^3.3",
     "angular-ui-bootstrap-bower": "0.13.4",
     "angular-messages": "^1.5.0",
-    "angular-material": "^1.0.6"
+    "angular-material": "^1.0.6",
+    "v-accordion": "^1.5.2"
   },
   "analytics": false
 }
