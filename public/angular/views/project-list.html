@@ -3,16 +3,18 @@
       <md-tab id="tab1">
         <md-tab-label>Project Options</md-tab-label>
         <md-tab-body>
-            <div ng-controller="ProjectListController"  ng-cloak>
-              <uib-accordion close-others="oneAtATime">
-                <uib-accordion-group heading="{{p.projectNumber}}" ng-repeat="p in projects" class = "darkfont">
-                <img ng-src="{{p.thumbnail}}" class="img-responsive pull-left projectImage" />
-                  <h3>{{p.projectName}}</h3>
-                  <md-divider></md-divider>
-                  <p>{{p.description}}</p>
-                </uib-accordion-group>
-                <uib-accordion>
-              </div>
+            <div ng-controller = "ProjectListController">
+                <md-list-item class="md-2-line" ng-repeat="p in projects" ng-click="null">
+                <img ng-src="{{p.thumbnail}}" class="md-avatar"/>
+                  <div class="md-list-item-text" layout="column">
+                    <h3>{{p.projectName}}</h3>
+                    <p>
+                    <md-button class = "project-button">Join</md-button>
+                    <md-button class = "project-button">Detail</md-button></p>
+                  </div>
+                  <md-divider ng-if="!$last"></md-divider>
+                </md-list-item>
+        </div>
         </md-tab-body>
       </md-tab>
       <md-tab id="tab2">
@@ -23,3 +25,7 @@
       </md-tab>
     </md-tabs>
   </div>
+
+
+
+
