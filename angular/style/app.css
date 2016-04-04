@@ -8,46 +8,32 @@ body {
   box-sizing: border-box;
 }
 
-.welcome-title-bar{
-  height: 700px;
-  width:  100%;
-
-}
-
 .main{
     color:#fff;
-   background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #b39c68, #a56365, #412e4c)
+   background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+   height:100vh;
+   padding: 4em 0 0 0;
 }
 
-
-.projectImage{
-    height: 100px;
-    width: 100px;
-    padding-right: 10px;
-}
-
-.darkfont{
-  color:#000;
-}
-
-#header {
+.header {
         position: relative;
         margin: 0;
         background-image: url("images/overlay.png"), url("../../image/header.jpg");
         background-size: auto, cover;
         background-repeat: repeat, no-repeat;
-        padding: 14em 0 14em 0;
+        padding: 20em 0 14em 0;
         text-align: center;
         color: #fff;
+        height:100vh;
     }
 
-        #header header h1 {
+        .header header h1 {
             font-size: 2.25em;
             line-height: 1.25em;
             margin-bottom: 0;
         }
 
-        #header header p {
+        .header header p {
             margin-top: 1.25em;
             font-weight: 100;
             padding: 0;
@@ -60,21 +46,6 @@ body {
             padding-top: 1.5em;
         }
 
-
-
-.carddemoBasicUsage .card-media {
-  background-color: #999999; }
-
-md-card > h2 {
-  padding-left : 15px;
-
-}
-
-.note {
-  width: 100%;
-  box-sizing:border-box;
-
-}
 
 .dark {
         color: #aaa;
@@ -244,34 +215,71 @@ md-card > h2 {
         background: rgba(255, 255, 255, 0.15);
         box-shadow: inset 0 0 0 1px #fff;
       }
-    a {
-    -moz-transition: border-bottom-color 0.25s ease-in-out;
-    -webkit-transition: border-bottom-color 0.25s ease-in-out;
-    -ms-transition: border-bottom-color 0.25s ease-in-out;
-    transition: border-bottom-color 0.25s ease-in-out;
-    color: inherit;
-    text-decoration: none;
-    border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
-  }
 
-    a:hover {
-      border-bottom-color: transparent;
-    }
-
-
-p.good {
-  line-height: 30px;
-  padding-left: 10px;
-  margin: 10px;
-    box-sizing:border-box;
-    background-color: rgba(0, 128, 0, 0.31);
+.project-button{
+  border: solid 1px; 
+  width: 50px!important;
+  font-size: 8px;
+}
+.more-padding{
+  padding: 4em 0 4em 0 ;
 }
 
-p.warn {
-
-  line-height: 30px;
-  padding-left: 10px;
-  margin: 10px;
-    box-sizing:border-box;
-    background-color: rgba(204, 2, 5, 0.31);
+.allow-scroll{
+  overflow: scroll;
+  height: 25px;
 }
+
+.small-image{
+  height: 40%;
+  width: 40%;
+}
+.carddemoBasicUsage .card-media {
+  background-color: #999999; }
+
+md-card > h2 {
+  padding-left : 15px;
+
+}
+
+.note {
+  width: 100%;
+  box-sizing:border-box;
+
+}
+
+h3{
+  font-weight: 200!important;
+}
+
+h2.grey {
+        font-size: 2.25em;
+        font-weight: 100;
+        margin-bottom: 0;
+        text-align: center;
+        color: #666;
+      }
+
+p.grey {
+        margin: 2em 0 0 0;
+        padding: 0;
+        text-align: center;
+        color: #666;
+      }
+
+a {
+-moz-transition: border-bottom-color 0.25s ease-in-out;
+-webkit-transition: border-bottom-color 0.25s ease-in-out;
+-ms-transition: border-bottom-color 0.25s ease-in-out;
+transition: border-bottom-color 0.25s ease-in-out;
+color: inherit;
+text-decoration: none;
+border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
+}
+
+a:hover {
+  border-bottom-color: transparent;
+}
+
+
+

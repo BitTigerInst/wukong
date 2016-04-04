@@ -5,6 +5,13 @@ exports.welcomeTitle = function() {
   };
 };
 
+exports.textDivider = function(){
+  return{
+    controller: 'TextDividerController',
+    templateUrl: '/views/text-divider.html'
+  };
+};
+
 exports.userAttributeBoard = function() {
   return {
     controller: 'UserAttributeBoard',

@@ -3,7 +3,7 @@ var directives = require('./directives');
 var services = require('./services');
 var _ = require('underscore');
 
-var components = angular.module('wukong.components', ['ng', 'ngMaterial','ngAnimate','vAccordion','ui.bootstrap']);
+var components = angular.module('wukong.components', ['ng', 'ngMaterial']);
 
 _.each(controllers, function(controller, name) {
   components.controller(name, controller);
@@ -19,10 +19,3 @@ _.each(services, function(factory, name) {
 
 var app = angular.module('wukong', ['wukong.components', 'ngRoute']);
 
-app.config(function ($mdThemingProvider) {
-$mdThemingProvider
-    .theme('default')
-    .primaryPalette('indigo')
-    .accentPalette('pink')
-    .warnPalette('red')
-});
