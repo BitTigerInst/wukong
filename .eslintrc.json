@@ -13,6 +13,9 @@
   "rules": {
     "new-cap": 1,
     "no-console": 0,
-    "func-names": 1
+    "func-names": 1,
+    "quotes": 0,
+    "no-param-reassign": 0,
+    "max-len": [2, 120, 2]
   }
 }
