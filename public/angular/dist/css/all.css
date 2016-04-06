@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+
+body {
+  width:100%;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.main{
+    color:#fff;
+   background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+   height:100vh;
+   padding: 4em 0 0 0;
+}
+
+.header {
+        position: relative;
+        margin: 0;
+        background-image: url("images/overlay.png"), url("../../image/header.jpg");
+        background-size: auto, cover;
+        background-repeat: repeat, no-repeat;
+        padding: 20em 0 14em 0;
+        text-align: center;
+        color: #fff;
+        height:100vh;
+    }
+
+        .header header h1 {
+            font-size: 2.25em;
+            line-height: 1.25em;
+            margin-bottom: 0;
+        }
+
+        .header header p {
+            margin-top: 1.25em;
+            font-weight: 100;
+            padding: 0;
+            font-size: 1.25em;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        #header footer {
+            padding-top: 1.5em;
+        }
+
+
+.dark {
+        color: #aaa;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #fff;
+}
+
+.dark a {
+        color: #fff;
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+    }
+
+        .dark a:hover {
+            border-bottom-color: rgba(255, 255, 255, 0);
+        }
+
+.dark hr {
+        border-top-color: rgba(255, 255, 255, 0.5);
+    }
+
+
+.dark form input[type="text"],
+  .dark form input[type="email"],
+  .dark form input[type="password"],
+  .dark form select,
+  .dark form .select,
+  .dark form textarea {
+    background: none;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+
+    .dark form input[type="text"]:focus,
+    .dark form input[type="email"]:focus,
+    .dark form input[type="password"]:focus,
+    .dark form select:focus,
+    .dark form .select:focus,
+    .dark form textarea:focus {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: inset 0 0 0 1px #fff;
+    }
+
+  .dark form .select:before {
+    background: url("images/dark-arrow.svg") center center no-repeat;
+    background-size: contain;
+  }
+
+  .dark form .formerize-placeholder {
+    color: #aaa !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .dark form ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .dark form :-moz-placeholder {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .dark form ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  .dark form :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+
+  
+
+      .dark .feature-icon .icon {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+
+  .dark .feature-icon:before, .dark .feature-icon:after {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+
+/* Button */
+
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  button,
+  .button {
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    background: #3d3d3d;
+    padding: 0.85em 3em 0.85em 3em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    button:hover,
+    .button:hover {
+      background: #4f4f4f;
+    }
+
+    input[type="button"].alt,
+    input[type="submit"].alt,
+    input[type="reset"].alt,
+    button.alt,
+    .button.alt {
+      color: inherit;
+      box-shadow: inset 0 0 0 1px #e6e6e6;
+      background: none;
+    }
+
+      input[type="button"].alt:hover,
+      input[type="submit"].alt:hover,
+      input[type="reset"].alt:hover,
+      button.alt:hover,
+      .button.alt:hover {
+        background: rgba(0, 0, 0, 0.025);
+      }
+
+  .dark input[type="button"],
+  .dark input[type="submit"],
+  .dark input[type="reset"],
+  .dark button,
+  .dark .button {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 0 0 1px #fff;
+    color: #fff;
+  }
+
+    .dark input[type="button"]:hover,
+    .dark input[type="submit"]:hover,
+    .dark input[type="reset"]:hover,
+    .dark button:hover,
+    .dark .button:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .dark input[type="button"].alt,
+    .dark input[type="submit"].alt,
+    .dark input[type="reset"].alt,
+    .dark button.alt,
+    .dark .button.alt {
+      background: none;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+      .dark input[type="button"].alt:hover,
+      .dark input[type="submit"].alt:hover,
+      .dark input[type="reset"].alt:hover,
+      .dark button.alt:hover,
+      .dark .button.alt:hover {
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: inset 0 0 0 1px #fff;
+      }
+
+.project-button{
+  border: solid 1px; 
+  width: 50px!important;
+  font-size: 8px;
+}
+.more-padding{
+  padding: 4em 0 4em 0 ;
+}
+
+.allow-scroll{
+  overflow: scroll;
+  height: 25px;
+}
+
+.small-image{
+  height: 40%;
+  width: 40%;
+}
+.carddemoBasicUsage .card-media {
+  background-color: #999999; }
+
+md-card > h2 {
+  padding-left : 15px;
+
+}
+
+.note {
+  width: 100%;
+  box-sizing:border-box;
+
+}
+
+h3{
+  font-weight: 200!important;
+}
+
+h2.grey {
+        font-size: 2.25em;
+        font-weight: 100;
+        margin-bottom: 0;
+        text-align: center;
+        color: #666;
+      }
+
+p.grey {
+        margin: 2em 0 0 0;
+        padding: 0;
+        text-align: center;
+        color: #666;
+      }
+
+a {
+-moz-transition: border-bottom-color 0.25s ease-in-out;
+-webkit-transition: border-bottom-color 0.25s ease-in-out;
+-ms-transition: border-bottom-color 0.25s ease-in-out;
+transition: border-bottom-color 0.25s ease-in-out;
+color: inherit;
+text-decoration: none;
+border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
+}
+
+a:hover {
+  border-bottom-color: transparent;
+}
+
+
+

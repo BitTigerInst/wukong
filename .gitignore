@@ -33,7 +33,6 @@ Icon
 nbproject/private/
 build/
 nbbuild/
-dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
@@ -54,7 +53,7 @@ node_modules/
 # Bower Files
 # --------------------
 .bower-*/
-bower_components
+// bower_components // can't ignore it, need to serve to public
 
 # --------------------
 # App Files

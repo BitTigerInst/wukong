@@ -3,6 +3,7 @@
       <md-tab id="tab1">
         <md-tab-label>Project Options</md-tab-label>
         <md-tab-body>
+
             <div ng-controller = "ProjectListController">
                 <md-list-item class="md-2-line" ng-repeat="p in projects" ng-click="null">
                 <img ng-src="{{p.thumbnail}}" class="md-avatar"/>
@@ -15,6 +16,8 @@
                   <md-divider ng-if="!$last"></md-divider>
                 </md-list-item>
         </div>
+      </div>
+
         </md-tab-body>
       </md-tab>
       <md-tab id="tab2">

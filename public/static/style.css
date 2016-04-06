@@ -3676,7 +3676,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .portfolio-notitle .por
 .portfolio-desc h3 a:hover { color: #1ABC9C; }
 
 .portfolio-desc span {
-	display: block;
+	max-height: 20px;
 	margin-top: 3px;
 	color: #888;
 }

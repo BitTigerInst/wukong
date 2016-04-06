@@ -1,0 +1,15 @@
+{
+  "name": "ui-bootstrap",
+  "homepage": "https://github.com/angular-ui/bootstrap",
+  "version": "1.2.5",
+  "_release": "1.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.5",
+    "commit": "411709285066b96c0b9c7a97c346049e25f18a85"
+  },
+  "_source": "git://github.com/angular-ui/bootstrap.git",
+  "_target": "^1.2.5",
+  "_originalSource": "ui-bootstrap",
+  "_direct": true
+}
