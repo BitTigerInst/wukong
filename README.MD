@@ -47,13 +47,13 @@ __Step 2. get wukong source code and install package__
 
 ## Who we are:
 
-### <img src="public/images/markdown/logo.png" width="124px" height="124px" /> BJGX-白驹过隙
+### <img src="public/logo.png" width="124px" height="124px" /> BJGX-白驹过隙
 **More to be add here**
 
-### <img src="public/images/markdown/bittigerlogo.png" width="124px" height="124px" /> BitTiger
+### <img src="public/bittigerlogo.png" width="124px" height="124px" /> BitTiger
 **More to be add here**
 
-### <img src="public/images/markdown/meanlogo.png" width="124px" height="124px" /> MEAN Stack
+### <img src="public/meanlogo.png" width="124px" height="124px" /> MEAN Stack
 
 MEAN is a framework for an easy starting point with [MongoDB](https://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](https://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 
