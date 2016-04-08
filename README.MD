@@ -8,6 +8,12 @@
 
 > wukong-phase-1 vedio demo: https://vimeo.com/157355174
 
+> code style
+
+> - [Angular: John Papa's Guideline](https://github.com/johnpapa/angular-styleguide/tree/master/a1)
+> - [ES5: Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/tree/master/es5)
+
+
 ## Description
 
 Inspired by DMK - Rong Zou, wukong is a platform built by Team BJGX (白驹过隙) to divide study groups for Bittiger members.
