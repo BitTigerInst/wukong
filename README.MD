@@ -1,6 +1,9 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # wukong
+
+> wukong tech refer: https://gist.github.com/taoning2014/a21fec1f99333c8b337b733159b0318a
+
 > website: https://wukong-bittiger.herokuapp.com
 
 > wukong-phase-1 vedio demo: https://vimeo.com/157355174
