@@ -12,7 +12,7 @@ insert_final_newline = true
 [*]
 trim_trailing_whitespace = true
 
-# tab indentation, tab_width defaults to the value of indent_size and doesn't usually need to be specified.
+# space indentation
 [*]
-indent_style = tab
-tab_width = 2
+indent_style = space
+indent_size = 2
