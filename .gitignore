@@ -71,3 +71,8 @@ modules/views/
 # vim Files
 # --------------------
 *.swp
+
+# --------------------
+# config file
+# --------------------
+config.json

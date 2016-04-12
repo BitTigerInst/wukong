@@ -1,10 +1,11 @@
 var mongoose = require('mongoose');
 var _ = require('underscore');
+var config = require('../config.json');
 
 var uristring =
   process.env.MONGOLAB_URI ||
   process.env.MONGOHQ_URL ||
-  'mongodb://localhost:27017/test';
+	config.mongo_url;
 
 module.exports = function(wagner) {
   mongoose.connect(uristring);

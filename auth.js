@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var config = require('./config.json');
 
 function setupAuth(User, app) {
   var passport = require('passport');
@@ -19,8 +20,8 @@ function setupAuth(User, app) {
   // Facebook-specific
   passport.use(new FacebookStrategy(
     {
-      clientID: process.env.FACEBOOK_CLIENT_ID,
-      clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
+      clientID: config.FACEBOOK_CLIENT_ID,
+      clientSecret: config.FACEBOOK_CLIENT_SECRET,
       callbackURL: 'http://localhost:5000/auth/facebook/callback'
     },
     function(accessToken, refreshToken, profile, done) {

@@ -1,0 +1,5 @@
+{
+	"FACEBOOK_CLIENT_ID": "202859223402705",
+	"FACEBOOK_CLIENT_SECRET": "3b2034b47e1437c07943fd79e6da9712",
+	"mongo_url": "mongodb://localhost:27017/test"
+}
