@@ -25,8 +25,7 @@
     "passport-facebook": "^2.1.0",
     "serve-favicon": "^2.3.0",
     "superagent": "^1.7.2",
-    "underscore": "^1.8.3",
-    "wagner-core": "^0.2.0"
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "commitizen": "^2.3.0",

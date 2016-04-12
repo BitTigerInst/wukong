@@ -7,17 +7,14 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var errorhandler = require('errorhandler');
 
-var wagner = require('wagner-core');
-require('./mongodb/models')(wagner);
-
 var staticPages = require('./routes/staticPages');
-//var auth = require('./routes/auth');
+var auth = require('./routes/auth');
 
 var app = express();
 
 app.use(cors());
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
+//app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -28,7 +25,7 @@ app.use(express.static(__dirname + '/public/angular'));
 app.use(express.static(__dirname + '/angular'));
 
 app.use('/', staticPages);
-//app.use('/auth', auth);
+app.use('/auth', auth);
 
 // Handle 404
 app.use(function(req, res) {
