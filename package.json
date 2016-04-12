@@ -5,17 +5,21 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "startdev": "nodemon index.js",
+    "startdev": "nodemon bin/www",
     "test": "mocha ./test/test",
     "commit": "git-cz"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "cors": "^2.7.1",
+    "errorhandler": "^1.4.3",
     "express": "4.13.3",
     "express-session": "^1.13.0",
     "http-status": "^0.2.0",
     "mongodb": "^2.1.7",
     "mongoose": "^4.4.4",
+    "morgan": "^1.7.0",
     "nodemon": "^1.9.1",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.0",
