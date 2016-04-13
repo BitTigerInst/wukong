@@ -17,5 +17,5 @@ _.each(services, function(factory, name) {
   components.factory(name, factory);
 });
 
-var app = angular.module('wukong', ['wukong.components', 'ngRoute']);
+var app = angular.module('wukong', ['wukong.components']);
 

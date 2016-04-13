@@ -5,8 +5,8 @@ exports.welcomeTitle = function() {
   };
 };
 
-exports.textDivider = function(){
-  return{
+exports.textDivider = function() {
+  return {
     controller: 'TextDividerController',
     templateUrl: '/views/text-divider.html'
   };
