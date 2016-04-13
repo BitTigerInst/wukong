@@ -1114,8 +1114,6 @@ body.stretched #header.full-header .container {
 	transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 }
 
-
-
 #primary-menu ul div.top-link-section {
 	display: none;
 	pointer-events: none;
@@ -2384,8 +2382,8 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 -----------------------------------------------------------------*/
 
 #top-right,
-#top-right ul { 
-	margin: 0; 
+#top-right ul {
+	margin: 0;
 }
 
 #top-right li,
