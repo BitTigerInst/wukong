@@ -18,7 +18,7 @@ exports.TextDividerController = function($scope) {
 };
 
 
-exports.UserAttributeBoard = function($scope) {
+exports.UserAttributeBoardController = function($scope) {
   $scope.range = [
     { label: 'Beginner' },
     { label: 'Level' },
@@ -58,6 +58,7 @@ exports.DynamicNewsController = function($scope) {
 };
 
 exports.ProjectListController = function($scope) {
+  $scope.selectedIndex = 0;
   $scope.projects = [
     {
       thumbnail: 'image/1.jpg',

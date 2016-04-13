@@ -14,7 +14,7 @@ exports.textDivider = function() {
 
 exports.userAttributeBoard = function() {
   return {
-    controller: 'UserAttributeBoard',
+    controller: 'UserAttributeBoardController',
     templateUrl: '/views/user-attribute-board.html'
   };
 };

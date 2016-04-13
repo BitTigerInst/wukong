@@ -1,9 +1,9 @@
 <div>
-  <md-tabs md-selected="data.selectedIndex">
+  <md-tabs md-selected="selectedIndex">
     <md-tab id="tab1">
       <md-tab-label>Project Options</md-tab-label>
       <md-tab-body>
-        <div ng-controller="ProjectListController">
+        <div>
           <md-list-item class="md-2-line" ng-repeat="p in projects" ng-click="null">
             <img ng-src="{{p.thumbnail}}" class="md-avatar"/>
             <div class="md-list-item-text" layout="column">
@@ -26,7 +26,3 @@
     </md-tab>
   </md-tabs>
 </div>
-
-
-
-

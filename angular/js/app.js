@@ -18,4 +18,3 @@ _.each(services, function(factory, name) {
 });
 
 var app = angular.module('wukong', ['wukong.components']);
-

@@ -56,4 +56,3 @@ gulp.task('watch', function () {
 gulp.task('default', function (callback) {
   runSequence('clean', 'bower_components', 'views', 'images', 'dist', callback);
 });
-
