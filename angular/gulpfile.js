@@ -40,7 +40,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['js/*.js', 'index.html'], ['browserify']);
+  gulp.watch(['js/*.js', 'views/*.html', 'index.html'], ['default']);
 });
 
 gulp.task('default', function (callback) {

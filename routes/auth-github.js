@@ -57,8 +57,15 @@ router.get('/github',
 router.get('/github/callback',
   passport.authenticate('github', { failureRedirect: 'http://localhost:3000' }),
   function(req, res) {
-    console.log("call callback")
+    console.log('github callback', req.user);
     res.sendFile(path.join(__dirname, '../angular/welcome.html'));
   });
+
+router.get('/logout', function(req, res) {
+  console.log('before', req.user);
+  req.logout();
+  console.log('after', req.user);
+  res.end();
+});
 
 module.exports = router;

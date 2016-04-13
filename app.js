@@ -29,6 +29,7 @@ app.use('/auth', authGithub);
 
 // Handle 404
 app.use(function(req, res) {
+  console.log(req.url);
   res.status(404).redirect('/404');
 });
 
