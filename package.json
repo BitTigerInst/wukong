@@ -23,6 +23,7 @@
     "nodemon": "^1.9.1",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.0",
+    "passport-github": "^1.1.0",
     "serve-favicon": "^2.3.0",
     "superagent": "^1.7.2",
     "underscore": "^1.8.3"

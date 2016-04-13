@@ -8,6 +8,7 @@ var cors = require('cors');
 var errorhandler = require('errorhandler');
 
 var staticPages = require('./routes/staticPages');
+var authGithub = require('./routes/auth-github');
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.use(express.static(__dirname + '/public/angular'));
 app.use(express.static(__dirname + '/angular'));
 
 app.use('/', staticPages);
+app.use('/auth', authGithub);
 
 // Handle 404
 app.use(function(req, res) {

@@ -8,20 +8,19 @@ module.exports = new mongoose.Schema({
     },
     picture: {
       type: String,
-      match: /^http:\/\//i
+      match: /^https?:\/\//i
+    },
+    email: {
+      type: String,
+      lowercase: true
+    },
+    profileUrl: {
+      type: String,
+      match: /^https?:\/\//i
     }
   },
   data: {
     oauth: { type: String, required: true },
-    cart: [{
-      product: {
-        type: mongoose.Schema.Types.ObjectId
-      },
-      quantity: {
-        type: Number,
-        default: 1,
-        min: 1
-      }
-    }]
+    github: {}
   }
-})
+});
