@@ -73,6 +73,7 @@ modules/views/
 *.swp
 
 # --------------------
-# config file
+# custom
 # --------------------
 config.json
+public/angular/
