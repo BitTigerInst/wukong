@@ -17,4 +17,14 @@ _.each(services, function(factory, name) {
   components.factory(name, factory);
 });
 
-var app = angular.module('wukong', ['wukong.components']);
+angular.module('wukong', ['wukong.components', 'ui.router'])
+  .config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('welcome', {
+        url: "/welcome.html",
+        templateUrl: "views/welcome.html"
+      });
+
+    // For any unmatched url, redirect to /state1
+    $urlRouterProvider.otherwise("/welcome.html");
+  });

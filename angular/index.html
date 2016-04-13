@@ -8,41 +8,14 @@
 </head>
 <body ng-app="wukong" ng-cloak>
 
-<div layout="row">
-  <div flex>
-    <welcome-title></welcome-title>
-  </div>
-</div>
-
-<div layout="row">
-  <div flex>
-    <text-divider></text-divider>
-  </div>
-</div>
-
-<div layout="row" class="main">
-  <div flex=50>
-    <div layout="column">
-      <div flex flex-offset="35">
-        <dynamic-news></dynamic-news>
-      </div>
-      <div flex flex-offset="35">
-        <project-list></project-list>
-      </div>
-    </div>
-  </div>
-  <div flex=50 flex-offset="20">
-    <user-attribute-board></user-attribute-board>
-  </div>
-</div>
+<div ui-view>Hello world</div>
 
 <script src="/bower_components/angular/angular.js"></script>
 <script src="/bower_components/angular-animate/angular-animate.js"></script>
 <script src="/bower_components/angular-aria/angular-aria.js"></script>
 <script src="/bower_components/angular-messages/angular-messages.js"></script>
 <script src="/bower_components/angular-material/angular-material.js"></script>
-<script src="/bower_components/angular-route/angular-route.js"></script>
-<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="/dist/js/app.js"></script>
 </body>
 </html>
