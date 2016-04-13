@@ -6,10 +6,16 @@ var concat = require('gulp-concat');
 
 gulp.task('clean', function () {
   return del([
+    '../public/angular/bower_components/',
     '../public/angular/dist/**/*',
     '../public/angular/views/',
     '../public/angular/image/'
   ], { force: true });
+});
+
+gulp.task('bower_components', function () {
+  return gulp.src(['bower_components/**/*']).
+  pipe(gulp.dest('../public/angular/bower_components'));
 });
 
 gulp.task('views', function () {
@@ -20,6 +26,10 @@ gulp.task('views', function () {
 gulp.task('images', function () {
   return gulp.src(['image/*']).
     pipe(gulp.dest('../public/angular/image/'));
+});
+
+gulp.task('dist', function (callback) {
+  runSequence('background', 'styles', 'scripts', callback);
 });
 
 gulp.task('background', function () {
@@ -44,6 +54,6 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function (callback) {
-  runSequence('clean', 'views', 'images', 'background', 'styles', 'scripts', callback);
+  runSequence('clean', 'bower_components', 'views', 'images', 'dist', callback);
 });
 
