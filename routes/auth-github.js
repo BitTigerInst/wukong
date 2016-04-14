@@ -10,11 +10,15 @@ var User = require('../mongodb/models').User;
 
 // High level serialize/de-serialize configuration for passport
 passport.serializeUser(function(user, done) {
+  console.log('in serializeUser, put user data into session storage');
   done(null, user._id);
 });
 
 passport.deserializeUser(function(id, done) {
-  User.findOne({ _id: id }).exec(done);
+  User.findOne({ _id: id }, function(err, user) {
+    console.log('in deserializeUser, got user, and attached to req.user, user is: ', user);
+    done(null, user);
+  });
 });
 
 // Github-specific
@@ -22,10 +26,10 @@ passport.use(new GithubStrategy(
   {
     clientID: config.GITHUB_CLIENT_ID,
     clientSecret: config.GITHUB_CLIENT_SECRET,
-    callbackURL: 'http://localhost:3000/auth/github/callback'
+    callbackURL: 'http://localhost:3000/api/auth/github/callback'
   },
   function(accessToken, refreshToken, profile, done) {
-    console.log(profile);
+    console.log('in strategy, got profile: ', profile);
     User.findOneAndUpdate(
       { 'data.oauth': profile.id },
       {
@@ -43,10 +47,6 @@ passport.use(new GithubStrategy(
       });
   }));
 
-// Express middlewares
-router.use(require('express-session')({
-  secret: 'this is a secret'
-}));
 router.use(passport.initialize());
 router.use(passport.session());
 
@@ -55,17 +55,23 @@ router.get('/github',
   passport.authenticate('github', { scope: [] }));
 
 router.get('/github/callback',
-  passport.authenticate('github', { failureRedirect: 'http://localhost:3000' }),
-  function(req, res) {
-    console.log('github callback', req.user);
-    res.sendFile(path.join(__dirname, '../angular/welcome.html'));
-  });
+  passport.authenticate('github', {
+    successRedirect: 'http://localhost:3000/index.html',
+    failureRedirect: 'http://localhost:3000/index.html'
+  }));
 
 router.get('/logout', function(req, res) {
-  console.log('before', req.user);
   req.logout();
-  console.log('after', req.user);
   res.end();
+});
+
+// got user data if user login
+router.get('/me', function(req, res) {
+  if (req.user) {
+    res.json(req.user);
+  } else {
+    res.json({ data: 'User not login yet!' });
+  }
 });
 
 module.exports = router;
