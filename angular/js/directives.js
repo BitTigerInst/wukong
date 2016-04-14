@@ -1,34 +1,34 @@
 exports.welcomeTitle = function() {
   return {
     controller: 'WelcomeTitleController',
-    templateUrl: '/views/welcome-title.html'
+    templateUrl: '/views/partials/welcome-title.html'
   };
 };
 
 exports.textDivider = function() {
   return {
     controller: 'TextDividerController',
-    templateUrl: '/views/text-divider.html'
+    templateUrl: '/views/partials/text-divider.html'
   };
 };
 
 exports.userAttributeBoard = function() {
   return {
     controller: 'UserAttributeBoardController',
-    templateUrl: '/views/user-attribute-board.html'
+    templateUrl: '/views/partials/user-attribute-board.html'
   };
 };
 
 exports.projectList = function() {
   return {
     controller: 'ProjectListController',
-    templateUrl: '/views/project-list.html'
+    templateUrl: '/views/partials/project-list.html'
   };
 };
 
 exports.dynamicNews = function() {
   return {
     controller: 'DynamicNewsController',
-    templateUrl: '/views/dynamic-news.html'
+    templateUrl: '/views/partials/dynamic-news.html'
   };
 };
