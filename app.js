@@ -13,10 +13,11 @@ var staticPages = require('./routes/staticPages');
 var angularPage = require('./routes/angularPage');
 var authGithub = require('./routes/auth-github');
 
-var config = require('./config.json');
-var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || config.mongo_url;
-
 var app = express();
+
+var config = require('./config.json')[app.get('env')];
+console.log('config obj', config);
+var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || config.mongo_url;
 
 app.use(cors());
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

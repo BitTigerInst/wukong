@@ -5,7 +5,9 @@ var path = require('path');
 var passport = require('passport');
 var GithubStrategy = require('passport-github').Strategy;
 
-var config = require('../config.json');
+var app = express();
+
+var config = require('../config.json')[app.get('env')];
 var User = require('../mongodb/models').User;
 
 // High level serialize/de-serialize configuration for passport
@@ -26,7 +28,7 @@ passport.use(new GithubStrategy(
   {
     clientID: config.GITHUB_CLIENT_ID,
     clientSecret: config.GITHUB_CLIENT_SECRET,
-    callbackURL: 'http://localhost:3000/api/auth/github/callback'
+    callbackURL: config.callbackURL
   },
   function(accessToken, refreshToken, profile, done) {
     console.log('in strategy, got profile: ', profile);
@@ -56,8 +58,8 @@ router.get('/github',
 
 router.get('/github/callback',
   passport.authenticate('github', {
-    successRedirect: 'http://localhost:3000/index.html',
-    failureRedirect: 'http://localhost:3000/index.html'
+    successRedirect: config.successRedirect,
+    failureRedirect: config.failureRedirect
   }));
 
 router.get('/logout', function(req, res) {

@@ -1,7 +1,20 @@
 {
-  "FACEBOOK_CLIENT_ID": "202859223402705",
-  "FACEBOOK_CLIENT_SECRET": "3b2034b47e1437c07943fd79e6da9712",
-  "GITHUB_CLIENT_ID": "c4ff66a37acb943ceabc",
-  "GITHUB_CLIENT_SECRET": "8c74ef596d0ad423422e1710ac1e2918827484ed",
-  "mongo_url": "mongodb://localhost:27017/wukong"
+  "development": {
+    "FACEBOOK_CLIENT_ID": "202859223402705",
+    "FACEBOOK_CLIENT_SECRET": "3b2034b47e1437c07943fd79e6da9712",
+    "GITHUB_CLIENT_ID": "c4ff66a37acb943ceabc",
+    "GITHUB_CLIENT_SECRET": "8c74ef596d0ad423422e1710ac1e2918827484ed",
+    "mongo_url": "mongodb://localhost:27017/wukong",
+    "callbackURL": "http://localhost:3000/api/auth/github/callback",
+    "successRedirect": "http://localhost:3000/index.html",
+    "failureRedirect": "http://localhost:3000/index.html"
+  },
+  "production": {
+    "GITHUB_CLIENT_ID": "0ee915db64b8cb273a6c",
+    "GITHUB_CLIENT_SECRET": "e25d374105b57cd7807cd65b4b33022d480087f7",
+    "mongo_url": "mongodb://heroku_pnt17cxt:r7u3rujo6gg5kus737pukf4sgt@ds011800.mlab.com:11800/heroku_pnt17cxt",
+    "callbackURL": "http://wukong-bittiger.herokuapp.com/api/auth/github/callback",
+    "successRedirect": "http://wukong-bittiger.herokuapp.com/index.html",
+    "failureRedirect": "http://wukong-bittiger.herokuapp.com/index.html"
+  }
 }

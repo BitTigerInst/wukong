@@ -1,6 +1,8 @@
+var express = require('express');
+var app = express();
+
 var mongoose = require('mongoose');
-var _ = require('underscore');
-var config = require('../config.json');
+var config = require('../config.json')[app.get('env')];
 
 var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || config.mongo_url;
 var User;
