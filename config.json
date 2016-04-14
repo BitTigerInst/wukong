@@ -3,5 +3,5 @@
   "FACEBOOK_CLIENT_SECRET": "3b2034b47e1437c07943fd79e6da9712",
   "GITHUB_CLIENT_ID": "c4ff66a37acb943ceabc",
   "GITHUB_CLIENT_SECRET": "8c74ef596d0ad423422e1710ac1e2918827484ed",
-  "mongo_url": "mongodb://localhost:27017/test"
+  "mongo_url": "mongodb://localhost:27017/wukong"
 }

@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var errorhandler = require('errorhandler');
@@ -11,6 +12,9 @@ var errorhandler = require('errorhandler');
 var staticPages = require('./routes/staticPages');
 var angularPage = require('./routes/angularPage');
 var authGithub = require('./routes/auth-github');
+
+var config = require('./config.json');
+var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || config.mongo_url;
 
 var app = express();
 
@@ -21,7 +25,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('express-session')({
-  secret: 'we love wukong!'
+  secret: 'we love wukong!',
+  store: new MongoStore({ url: uristring})
 }));
 // static resource for static page and angular
 app.use(express.static(__dirname + '/public/static/'));
