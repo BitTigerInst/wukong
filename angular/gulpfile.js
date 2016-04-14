@@ -4,8 +4,10 @@ var runSequence = require('run-sequence');
 var del = require('del');
 var concat = require('gulp-concat');
 
+// ******** Main Task ********
 gulp.task('clean', function () {
   return del([
+    '../views/index.html',
     '../public/angular/bower_components/',
     '../public/angular/dist/**/*',
     '../public/angular/views/',
@@ -13,40 +15,14 @@ gulp.task('clean', function () {
   ], { force: true });
 });
 
-gulp.task('bower_components', function () {
-  return gulp.src(['bower_components/**/*']).
-  pipe(gulp.dest('../public/angular/bower_components'));
+gulp.task('copyResource', function(callback) {
+  runSequence('copyResource:bower_components', 'copyResource:views',
+    'copyResource:images', 'copyResource:dist',callback);
 });
 
-gulp.task('views', function () {
-  return gulp.src(['views/**/*']).
-    pipe(gulp.dest('../public/angular/views/'));
-});
-
-gulp.task('images', function () {
-  return gulp.src(['image/*']).
-    pipe(gulp.dest('../public/angular/image/'));
-});
-
-gulp.task('dist', function (callback) {
-  runSequence('background', 'styles', 'scripts', callback);
-});
-
-gulp.task('background', function () {
-  return gulp.src(['style/images/*']).
-    pipe(gulp.dest('../public/angular/dist/css/images/'));
-});
-
-gulp.task('styles', function () {
-  return gulp.src('style/**/*.css')
-    .pipe(concat('all.css'))
-    .pipe(gulp.dest('../public/angular/dist/css/'));
-});
-
-gulp.task('scripts', function () {
-  return gulp.src('js/app.js').
-    pipe(browserify()).
-    pipe(gulp.dest('../public/angular/dist/js/'));
+gulp.task('copyLayout', function () {
+  return gulp.src(['index.html']).
+  pipe(gulp.dest('../views/'));
 });
 
 gulp.task('watch', function () {
@@ -54,5 +30,42 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function (callback) {
-  runSequence('clean', 'bower_components', 'views', 'images', 'dist', callback);
+  runSequence('clean', 'copyResource', 'copyLayout', callback);
+});
+
+// ******** Help Task ********
+gulp.task('copyResource:bower_components', function () {
+  return gulp.src(['bower_components/**/*']).
+  pipe(gulp.dest('../public/angular/bower_components'));
+});
+
+gulp.task('copyResource:views', function () {
+  return gulp.src(['views/**/*']).
+    pipe(gulp.dest('../public/angular/views/'));
+});
+
+gulp.task('copyResource:images', function () {
+  return gulp.src(['image/*']).
+    pipe(gulp.dest('../public/angular/image/'));
+});
+
+gulp.task('copyResource:dist', function (callback) {
+  runSequence('copyResource:dist:background', 'copyResource:dist:styles', 'copyResource:dist:scripts', callback);
+});
+
+gulp.task('copyResource:dist:background', function () {
+  return gulp.src(['style/images/*']).
+    pipe(gulp.dest('../public/angular/dist/css/images/'));
+});
+
+gulp.task('copyResource:dist:styles', function () {
+  return gulp.src('style/**/*.css')
+    .pipe(concat('all.css'))
+    .pipe(gulp.dest('../public/angular/dist/css/'));
+});
+
+gulp.task('copyResource:dist:scripts', function () {
+  return gulp.src('js/app.js').
+    pipe(browserify()).
+    pipe(gulp.dest('../public/angular/dist/js/'));
 });

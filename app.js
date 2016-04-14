@@ -8,6 +8,7 @@ var cors = require('cors');
 var errorhandler = require('errorhandler');
 
 var staticPages = require('./routes/staticPages');
+var angularPage = require('./routes/angularPage');
 var authGithub = require('./routes/auth-github');
 
 var app = express();
@@ -19,18 +20,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 // static resource for static page and angular
-app.use('/', express.static(__dirname + '/public/static/'));
+app.use(express.static(__dirname + '/public/static/'));
 app.use(express.static(__dirname + '/public/angular'));
-// comment the following line in production
-app.use(express.static(__dirname + '/angular'));
 
 app.use('/', staticPages);
+app.use('/', angularPage);
 app.use('/auth', authGithub);
 
 // Handle 404
 app.use(function(req, res) {
   console.log(req.url);
-  res.status(404).redirect('/404');
+  res.status(404).redirect('/404.html');
 });
 
 // Error Handlers
