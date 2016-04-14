@@ -26,7 +26,7 @@ gulp.task('copyLayout', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['js/*.js', 'views/*.html', 'index.html'], ['default']);
+  gulp.watch(['js/*.js', 'views/**/*.html', 'index.html'], ['default']);
 });
 
 gulp.task('default', function (callback) {

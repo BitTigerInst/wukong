@@ -61,6 +61,7 @@ router.get('/github/callback',
   }));
 
 router.get('/logout', function(req, res) {
+  console.log('hit logout');
   req.logout();
   res.end();
 });
@@ -70,7 +71,7 @@ router.get('/me', function(req, res) {
   if (req.user) {
     res.json(req.user);
   } else {
-    res.json({ data: 'User not login yet!' });
+    res.json({ data: null });
   }
 });
 

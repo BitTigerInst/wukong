@@ -5,6 +5,10 @@ var _ = require('underscore');
 
 var components = angular.module('wukong.components', ['ng', 'ngMaterial']);
 
+_.each(services, function(factory, name) {
+  components.factory(name, factory);
+});
+
 _.each(controllers, function(controller, name) {
   components.controller(name, controller);
 });
@@ -13,16 +17,18 @@ _.each(directives, function(directive, name) {
   components.directive(name, directive);
 });
 
-_.each(services, function(factory, name) {
-  components.factory(name, factory);
-});
-
 angular.module('wukong', ['wukong.components', 'ui.router'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('welcome', {
         url: "/",
-        templateUrl: "views/welcome.html"
+        templateUrl: "views/welcome.html",
+        resolve: {
+          user: function(UserService) {
+            console.log('in reslove');
+            return UserService.getUser();
+          }
+        }
       });
 
     // For any unmatched url, redirect to /state1

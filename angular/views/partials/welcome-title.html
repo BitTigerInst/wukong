@@ -3,8 +3,18 @@
     <h1 ng-bind="title"></h1>
     <p>Find the group projects you might be interested in</p>
   </header>
+  <div ng-show="isLogin">
+    <p> login user profile </p>
+    <img ng-src={{user.profile.picture}} alt="profile img not available" height="126" width="126">
+    <p> github account: {{user.data.github.login}}</p>
+    <p> blog: {{user.data.github.blog}}</p>
+    <p> company: {{user.data.github.company}}</p>
+    <p> email: {{user.data.github.email}}</p>
+    <p> followers: {{user.data.github.followers}}</p>
+    <p> following: {{user.data.github.following}}</p>
+  </div>
   <footer>
-    <button class="button">Continue</button>
-    <button class="button" ng-click="logout()">Logout</button>
+    <a href="http://localhost:3000/api/auth/github" class="button" ng-show="!isLogin">Login</a>
+    <button class="button" ng-click="logout()" ng-show="isLogin">Logout</button>
   </footer>
 </div>

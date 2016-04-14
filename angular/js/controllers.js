@@ -1,11 +1,15 @@
-exports.WelcomeTitleController = function($scope, $http) {
-  $scope.title = 'Welcome Back/ Welcome new hacker1';
+exports.WelcomeTitleController = function($scope, $http, $state, UserService) {
+  $scope.user = UserService.user.data;
+  if ($scope.user.profile) {
+    $scope.isLogin = true;
+    $scope.title = 'Welcome Back ' + $scope.user.data.github.name;
+  } else {
+    $scope.title = 'New hackers, welcome to join us!';
+  }
   $scope.logout = function() {
-//    console.log('Click logout');
-    $http.get('/auth/logout').then(function() {
-      console.log('In success');
-    }, function() {
-      console.log('In failure');
+    console.log('click logout');
+    $http.get('api/auth/logout').then(function() {
+      window.location.reload(true);
     });
   };
 };
