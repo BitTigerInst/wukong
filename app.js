@@ -10,7 +10,6 @@ var cors = require('cors');
 var errorhandler = require('errorhandler');
 
 var staticPages = require('./routes/staticPages');
-var angularPage = require('./routes/angularPage');
 var authGithub = require('./routes/auth-github');
 
 var app = express();
@@ -33,8 +32,10 @@ app.use(require('express-session')({
 app.use(express.static(__dirname + '/public/static/'));
 app.use(express.static(__dirname + '/public/angular'));
 
+app.get(/^\/(index)?$/, function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/index.html'));
+});
 app.use('/', staticPages);
-app.use('/', angularPage);
 app.use('/api/auth', authGithub);
 
 // Handle 404
