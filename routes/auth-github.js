@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var path = require('path');
+var _ = require('lodash');
 
 var passport = require('passport');
 var GithubStrategy = require('passport-github').Strategy;
@@ -12,13 +12,13 @@ var User = require('../mongodb/models').User;
 
 // High level serialize/de-serialize configuration for passport
 passport.serializeUser(function(user, done) {
-  console.log('in serializeUser, put user data into session storage');
+  console.log('serialize user to session: ' + user.profile);
   done(null, user._id);
 });
 
 passport.deserializeUser(function(id, done) {
   User.findOne({ _id: id }, function(err, user) {
-    console.log('in deserializeUser, got user, and attached to req.user, user is: ', user);
+    console.log('deserialize user from session', user.profile);
     done(null, user);
   });
 });
@@ -38,8 +38,8 @@ passport.use(new GithubStrategy(
         $set: {
           'profile.username': profile.username,
           'profile.profileUrl': profile.profileUrl,
-          'profile.picture': profile.photos[0]['value'],
-          'profile.email': profile.emails[0]['value'],
+          'profile.picture': _.isEmpty(profile.photos) ? null : profile.photos[0]['value'],
+          'profile.email': _.isEmpty(profile.emails) ? null : profile.emails[0]['value'],
           'data.github': profile._json
         }
       },
