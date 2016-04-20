@@ -1,0 +1,97 @@
+<!-- Header
+    ============================================= -->
+<header id="header" class="full-header">
+
+  <div id="header-wrap">
+
+    <div class="container clearfix">
+
+      <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+      <!-- Logo
+                ============================================= -->
+      <div id="logo">
+        <a onclick='scrollWin()' href="javascript:void(0)" class="standard-logo" data-dark-logo="images/monkey_s.jpg"><img
+                src="/images/monkey_s.jpg" alt="Canvas Logo"></a>
+        <a onclick='scrollWin()' href="javascript:void(0)" class="retina-logo" data-dark-logo="images/monkey.jpg"><img
+                src="/images/monkey.jpg" alt="Canvas Logo"></a>
+      </div><!-- #logo end -->
+
+      <!-- Primary Navigation
+                ============================================= -->
+      <nav id="primary-menu" class="style-2">
+
+        <ul class="norightmargin">
+          <li class="current"><a href="#">
+            <div><i class="icon-home2"></i>Home</div>
+          </a>
+            <ul>
+              <li><a href="index-corporate.html">
+                <div>Home - Submenu - 1</div>
+              </a>
+                <ul>
+                  <li><a href="index-corporate.html">
+                    <div>Item 1</div>
+                  </a></li>
+                  <li><a href="index-corporate-2.html">
+                    <div>Item 2</div>
+                  </a></li>
+                  <li><a href="index-corporate-3.html">
+                    <div>Item 3</div>
+                  </a></li>
+                  <li><a href="index-corporate-4.html">
+                    <div>Item 4</div>
+                  </a></li>
+                </ul>
+              </li>
+              <li><a href="index-app-showcase.html">
+                <div>Submenu - 2</div>
+              </a></li>
+            </ul>
+          </li>
+          <li><a href="list.html">
+            <div><i class="icon-th"></i>Project Display</div>
+          </a></li>
+          <li><a href="#">
+            <div><i class="icon-map-marker2"></i>Contact</div>
+          </a></li>
+        </ul>
+
+
+        <!-- Login/Register
+                   ============================================= -->
+        <ul class="norightborder">
+          <li><a href="#">SignUp</a></li>
+        </ul><!-- #login/register end -->
+
+        <ul class="col_one_third">
+          <div class="facebook_homepage"><a href="/auth/github"
+                                            class="btn btn-block btn-social btn-github btn-sm">
+            <span class="fa fa-github"></span>Sign in
+          </a>
+          </div>
+        </ul>
+
+        <!-- Top Search
+              ============================================= -->
+        <div id="top-search">
+          <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+          <form action="search.html" method="get">
+            <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+          </form>
+        </div><!-- #top-search end -->
+
+      </nav><!-- #primary-menu end -->
+
+    </div>
+
+  </div>
+
+  <script>
+    function scrollWin() {
+      $("html, body").animate({ scrollTop: 0 }, 400);
+      return false;
+    }
+  </script>
+
+</header><!-- #header end -->

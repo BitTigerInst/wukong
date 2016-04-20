@@ -17,7 +17,17 @@ var app = express();
 
 var config = require('./config.json')[app.get('env')];
 console.log('config obj', config);
+
+var exphbs = require('express-handlebars');
+
 var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || config.mongo_url;
+
+app.engine('handlebars', exphbs({
+  defaultLayout: 'static',
+  partialsDir: 'views/partials/'
+}));
+
+app.set('view engine', 'handlebars');
 
 app.use(cors());
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
