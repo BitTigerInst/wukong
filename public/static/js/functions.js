@@ -1029,26 +1029,22 @@ var SEMICOLON = SEMICOLON || {};
 					$menuChildElement.addClass('menu-pos-invert');
 				}
 			});
+			//social button
+
 
       $(function() {
         $(window).scroll(function() {
           var scroll = $(window).scrollTop();
-          if (scroll >= 1) {
-            $("#primary-menu ul div.facebook a").addClass('small');
-          } else {
-            $("#primary-menu ul div.facebook a").removeClass("small");
-          }
-        });
-      });
-
-      $(function() {
-        $(window).scroll(function() {
-          var scroll = $(window).scrollTop();
-          if (scroll >= 2100) {
-            $("#primary-menu ul div.facebook_homepage a").addClass('small');
+          if (scroll >= 2550) {
+						$("#primary-menu ul div.facebook_homepage a").addClass("small");
           } else {
             $("#primary-menu ul div.facebook_homepage a").removeClass("small");
           }
+					if(scroll > 700 && scroll < 2550 ){
+						$("#primary-menu ul div.facebook_homepage a").hide();
+					}else{
+						$("#primary-menu ul div.facebook_homepage a").show('slow');
+					}
         });
       });
 		},
