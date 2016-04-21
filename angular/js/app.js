@@ -21,7 +21,7 @@ angular.module('wukong', ['wukong.components', 'ui.router'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('welcome', {
-        url: "/",
+        url: "/welcome",
         templateUrl: "views/welcome.html",
         resolve: {
           user: function(UserService) {
@@ -32,5 +32,5 @@ angular.module('wukong', ['wukong.components', 'ui.router'])
       });
 
     // For any unmatched url, redirect to /state1
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("/welcome");
   });

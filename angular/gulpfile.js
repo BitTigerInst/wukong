@@ -21,7 +21,7 @@ gulp.task('copyResource', function(callback) {
 });
 
 gulp.task('copyLayout', function () {
-  return gulp.src(['index.html']).
+  return gulp.src(['layout.html']).
   pipe(gulp.dest('../views/'));
 });
 
