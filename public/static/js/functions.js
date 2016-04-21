@@ -1043,7 +1043,7 @@ var SEMICOLON = SEMICOLON || {};
 					if(scroll > 700 && scroll < 2550 ){
 						$("#primary-menu ul div.facebook_homepage a").hide();
 					}else{
-						$("#primary-menu ul div.facebook_homepage a").show('fast');
+						$("#primary-menu ul div.facebook_homepage a").show('slow');
 					}
         });
       });
